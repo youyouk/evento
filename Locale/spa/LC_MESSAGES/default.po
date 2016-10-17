@@ -1,0 +1,961 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2;plural=n!=1;\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+# START TRANSLATING HERE
+
+msgid "Paypal API settings"
+msgstr "Configuración del API de Paypal"
+
+msgid "Paypal API username"
+msgstr "Usuario API de Paypal"
+
+msgid "Paypal API password"
+msgstr "Password API de Paypal"
+
+msgid "Paypal API signature"
+msgstr "Firma API de Paypal"
+
+msgid "Currency"
+msgstr "Moneda"
+
+msgid "Price for event publishing"
+msgstr "Precio por publicar un evento"
+
+msgid "Use Paypal API sandbox"
+msgstr "Usar sandbox del API de Paypal"
+
+msgid "Publish your event for %s. Payments with Paypal."
+msgstr "Publica tu evento por %s. Pagos con Paypal."
+
+msgid "Pay with Paypal"
+msgstr "Paga con Paypal"
+
+msgid "Publish your event at %s"
+msgstr "Publicar evento en %s"
+
+msgid "Facebook Login"
+msgstr "Facebook Login"
+
+msgid "Confirmed"
+msgstr "Confirmado"
+
+msgid "Tentative"
+msgstr "Tentativa"
+
+msgid "Cancelled"
+msgstr "Cancelado"
+
+msgid "Status"
+msgstr "Estado"
+
+msgid "This event has not been confirmed yet"
+msgstr "Este evento aún no ha sido confirmado"
+
+msgid "This event has been cancelled"
+msgstr "Este evento ha sido cancelado"
+
+msgid "Exit"
+msgstr "Salir"
+
+msgid "Search term"
+msgstr "Término de búsqueda"
+
+msgid "Theme"
+msgstr "Tema"
+
+msgid "Visit website"
+msgstr "Visitar web"
+
+msgid "Uploaded to %s"
+msgstr "Subdo a %s"
+
+msgid "not published"
+msgstr "no publicado"
+
+msgid "Event is published"
+msgstr "El evento está publicado"
+
+msgid "deactivated"
+msgstr "desactivado"
+
+msgid "Upcoming"
+msgstr "Próximos"
+
+msgid "Past"
+msgstr "Pasados"
+
+msgid "Posted by me"
+msgstr "Enviados por mi"
+
+msgid "Message"
+msgstr "Mensaje"
+
+msgid "Promoted"
+msgstr "Destacado"
+
+msgid "Manage gallery"
+msgstr "Gestionar galería"
+
+msgid "Please log in to continue"
+msgstr "Por favor introduce tus datos para continuar"
+
+msgid "Disable event attendees."
+msgstr "Desactivar los asistentes en eventos."
+
+msgid "Disable events photos."
+msgstr "Desactivar las fotos en eventos."
+
+msgid "Disable events comments."
+msgstr "Desactivar los comentarios en eventos."
+
+msgid "I went"
+msgstr "Yo fui"
+
+msgid "I went to this event, click to cancel."
+msgstr "Yo fui a este evento, click para cancelar."
+
+msgid "Cancel"
+msgstr "Cancelar"
+
+msgid "Other dates for this event"
+msgstr "Otras fechas para este evento"
+
+msgid "Google Calendar"
+msgstr "Calendario Google"
+
+msgid "Export as iCal"
+msgstr "Exportar iCal"
+
+msgid "page"
+msgstr "página"
+
+# events in [country]
+msgid "Events in %s"
+msgstr "Eventos en %s"
+
+# events in [month] [year]
+msgid "Events in %1$s %2$s"
+msgstr "Eventos en %1$s del %2$s"
+
+# [category] events
+msgid "%s events"
+msgstr "eventos de %s"
+
+# [category] events in [country]
+msgid "%1$s events in %2$s"
+msgstr "eventos de %1$s en %2$s"
+
+# [category] events in [country] on [month] [day]
+msgid "%1$s events in %2$s on %3$s %4$s"
+msgstr "eventos de %1$s en %2$s el %4$s de %3$s"
+
+# events in [country] on [date]
+msgid "events in %1$s on %2$s %3$s"
+msgstr "eventos en %1$s el %3$s de %2$s"
+
+# events on [month] [day]
+msgid "events on %1$s %2$s"
+msgstr "eventos el %2$s de %1$s"
+
+# [category] events on [month] [day]
+msgid "%1$s events on %2$s %3$s"
+msgstr "eventos de %1$s el %3$s de %2$s"
+
+# Events tagged [tag name]
+msgid "Events tagged %s"
+msgstr "Eventos con la etiqueta %s"
+
+# Events at [venue name]
+msgid "Events at %s"
+msgstr "Eventos en %s"
+
+# Events on [month] [day] [year]
+msgid "Events on %1$s %2$s %3$s"
+msgstr "Eventos el %2$s de %1$s del %3$s"
+
+# [day], [month] [day number], [time].
+msgid "%1$s, %2$s %3$s, %4$s."
+msgstr "%1$s %3$s de %2$s, %4$s."
+
+# [day], [month] [day number].
+msgid "%1$s, %2$s %3$s."
+msgstr "%1$s %3$s de %2$s."
+
+# [day], [month] [day number] of [year], [time].
+msgid "%1$s, %2$s %3$s of %4$s, %5$s."
+msgstr "%1$s %3$s de %2$s del %4$s, %5$s."
+
+# [day], [month] [day number] of [year].
+msgid "%1$s, %2$s %3$s of %4$s."
+msgstr "%1$s %3$s de %2$s del %4$s."
+
+# At [venue name]
+msgid "At %s"
+msgstr "En %s"
+
+msgid "View attendees"
+msgstr "Ver asistentes"
+
+msgid "Related data"
+msgstr "Datos relacionados"
+
+msgid "View comments"
+msgstr "Ver comentarios"
+
+msgid "View photos"
+msgstr "Ver fotos"
+
+msgid "Back to event"
+msgstr "Volver al evento"
+
+msgid "There are no attendees."
+msgstr "No hay asistentes."
+
+msgid "Repeat"
+msgstr "Repetir"
+
+msgid "Does not repeat"
+msgstr "No repetir"
+
+msgid "Daily"
+msgstr "Cada día"
+
+msgid "Weekly"
+msgstr "Cada semana"
+
+msgid "Monthly"
+msgstr "Cada mes"
+
+msgid "Repeats every"
+msgstr "Repetir cada"
+
+msgid "Day(s)"
+msgstr "Día(s)"
+
+msgid "Week(s)"
+msgstr "Semana(s)"
+
+msgid "Month(s)"
+msgstr "Mes(eses)"
+
+msgid "Same day"
+msgstr "El mismo día"
+
+msgid "Specific day"
+msgstr "Un día en concreto"
+
+msgid "First"
+msgstr "Primer"
+
+msgid "Last"
+msgstr "Último"
+
+# repeats on *date* (repeat options)
+msgid "Repeats on"
+msgstr "Repetir los"
+
+msgid "Weekdays only"
+msgstr "Solo días entre semana"
+
+msgid "Repeat until"
+msgstr "Repetir hasta"
+
+msgid "End after"
+msgstr "Acabar después de"
+
+msgid "occurrences"
+msgstr "repeticiones"
+
+msgid "Add end date"
+msgstr "Añadir fecha de fin"
+
+msgid "Public key"
+msgstr "Clave pública"
+
+msgid "Private key"
+msgstr "Clave privada"
+
+msgid "Please delete the venues in this city before proceeding."
+msgstr "Por favor borra los locales en esta ciudad antes de continuar."
+
+msgid "Yes, delete the venue and all its events"
+msgstr "Sí, borrar este local y todos sus eventos"
+
+msgid "No, I don't want to delete this venue"
+msgstr "No, no quiero borrar este local"
+
+msgid "There is one event in this venue, deleting it will also delete the event."
+msgstr "Hay un evento en este local, borrar el local también borrará el evento."
+
+msgid "There are %d events in this venue, deleting it will also delete the events."
+msgstr "Hay %d eventos en este local, borrar el local también borrará los eventos."
+
+msgid "If you don't want to delete any event you may need to edit this venue or merge it with an existing one."
+msgstr "Si no quieres borrar ningún evento deberás editar este local."
+
+msgid "Website"
+msgstr "Página web"
+
+msgid "I'm going"
+msgstr "Voy a ir"
+
+msgid "Upload a photo"
+msgstr "Subir una foto"
+
+msgid "I'm going to this event, click to cancel."
+msgstr "Voy a este evento, click para cancelar."
+
+msgid "Edit user profile"
+msgstr "Editar perfil de usuario"
+
+msgid "Profile photo"
+msgstr "Foto de perfil"
+
+msgid "delete photo"
+msgstr "borrar foto"
+
+msgid "Event cover image"
+msgstr "Foto de portada del evento"
+
+msgid "Delete cover image"
+msgstr "Borrar la foto de portada"
+
+msgid "Date format"
+msgstr "Formato de fecha"
+
+# Welcome to [app name]
+msgid "Welcome to %s"
+msgstr "Bienvenido a %s"
+
+# You just signed up for a new account at [website url] with user name [username].
+msgid "You just signed up for a new account at %1$s with user name %2$s."
+msgstr "Acabas de darte de alta en %1$s con el nombre de usuario %2$s."
+
+msgid "There are no categories"
+msgstr "No hay categorías"
+
+msgid "There are no comments"
+msgstr "No hay comentarios"
+
+msgid "With selected:"
+msgstr "Con los seleccionados:"
+
+msgid "Basic settings"
+msgstr "Configuración básica"
+
+msgid "Time settings"
+msgstr "Configuración horaria"
+
+msgid "Country & language"
+msgstr "País e Idioma"
+
+msgid "Admin settings"
+msgstr "Configuración de administrador"
+
+msgid "Google Maps key"
+msgstr "Clave de Google Maps"
+
+msgid "Header & footer"
+msgstr "Cabecera y pie de página"
+
+msgid "Venues"
+msgstr "Locales"
+
+msgid "Venue"
+msgstr "Local"
+
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgid "Merge event"
+msgstr "Combinar evento"
+
+msgid "Merge venue"
+msgstr "Combinar local"
+
+msgid "Merge categories"
+msgstr "Combinar las categorías"
+
+msgid "This category already exists"
+msgstr "Esta categoría ya existe"
+
+msgid "This tag already exists"
+msgstr "Esta etiqueta ya existe"
+
+msgid "Merge tags"
+msgstr "Combinar etiquetas"
+
+msgid "This city already exists"
+msgstr "Esta ciudad ya existe"
+
+msgid "Merge cities"
+msgstr "Combinar las ciudades"
+
+msgid "Change Venue"
+msgstr "Cambiar Local"
+
+msgid "Venue Name"
+msgstr "Nombre del Local"
+
+msgid "Add a new venue"
+msgstr "Añadir un nuevo local"
+
+msgid "Provide the address for a new venue."
+msgstr "Establecer la dirección para un nuevo local."
+
+msgid "Please select a venue."
+msgstr "Por favor selecciona un local."
+
+msgid "Please select a category"
+msgstr "Por favor selecciona una categoría"
+
+msgid "merge"
+msgstr "combinar"
+
+msgid "Add a Venue"
+msgstr "Añadir un local"
+
+msgid "Time format"
+msgstr "Formato de hora"
+
+msgid "Only admin can add new venues."
+msgstr "Solo el administrador puede añadir locales."
+
+msgid "Only admin can register new users."
+msgstr "Solo el administrador puede añadir nuevos usuarios."
+
+msgid "There are no tags"
+msgstr "No hay etiquetas"
+
+msgid "There are no cities"
+msgstr "No hay ciudades"
+
+msgid "There are no users"
+msgstr "No hay usuarios"
+
+msgid "Events tomorrow"
+msgstr "Eventos mañana"
+
+msgid "Tomorrow"
+msgstr "Mañana"
+
+msgid "No events found"
+msgstr "No se han encontrado eventos"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Add user"
+msgstr "Añadir usuario"
+
+msgid "Export as CSV"
+msgstr "Exportar como CSV"
+
+msgid "Settings saved"
+msgstr "Configuración guardada"
+
+msgid "If you need to change your user password login in this url:"
+msgstr "Si necesitas cambiar tu clave de usuario puedes hacerlo en esta url:"
+
+msgid "If you don't need to change your password just ignore this email."
+msgstr "Si no necesitas cambiar tu clave puedes ignorar este email."
+
+msgid "Contact us"
+msgstr "Contacta con nosotros"
+
+msgid "User account is active"
+msgstr "La cuenta de usuario está activa"
+
+msgid "User is admin"
+msgstr "El usuario es administrador"
+
+msgid "Time zone"
+msgstr "Zona horaria"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Category"
+msgstr "Categoría"
+
+msgid "Add category"
+msgstr "Añadir categoría"
+
+# Events in category [category]
+msgid "Events in category %s"
+msgstr "Eventos en la categoría %s"
+
+msgid "Published"
+msgstr "Publicado"
+
+msgid "publish"
+msgstr "publicar"
+
+msgid "unpublish"
+msgstr "no publicar"
+
+msgid "Timezone"
+msgstr "Zona horaria"
+
+msgid "Allow events for this country only"
+msgstr "Permitir eventos sólo en este país"
+
+msgid "Allow events for this city only"
+msgstr "Permitir eventos sólo en esta ciudad"
+
+# admin settings select the day to start the week
+msgid "Week starts"
+msgstr "La semana empieza en"
+
+msgid "Admin moderates events before publishing."
+msgstr "El administrador modera los eventos antes de publicarlos."
+
+msgid "Users must confirm the email address."
+msgstr "Los usuarios deben confirmar su email."
+
+msgid "Bit.ly username"
+msgstr "Nombre de usuario de Bit.ly"
+
+msgid "Bit.ly API key"
+msgstr "Clave API de Bit.ly"
+
+msgid "Active"
+msgstr "Activo"
+
+msgid "deactivate"
+msgstr "desactivar"
+
+msgid "activate"
+msgstr "activar"
+
+msgid "Guests can add events"
+msgstr "Todos los usuarios pueden añadir eventos"
+
+msgid "Page header"
+msgstr "Cabecera de la página"
+
+msgid "Page bottom"
+msgstr "Pie de página"
+
+msgid "Language"
+msgstr "Idioma"
+
+msgid "Manage photos"
+msgstr "Administrar fotos"
+
+msgid "There are no photos"
+msgstr "No hay fotos"
+
+msgid "Settings"
+msgstr "Configuración"
+
+msgid "Events must be moderated and are not published immediately."
+msgstr "Los eventos deben ser moderados por un administrador y no se publican inmediatamente"
+
+msgid "This event is not published yet and has to be moderated by an admin"
+msgstr "Este evento no está publicado y debe ser moderado por un administrador"
+
+msgid "delete"
+msgstr "borrar"
+
+msgid "Application slogan"
+msgstr "Eslogan de la web"
+
+msgid "Application name"
+msgstr "Nombre de la web"
+
+msgid "Admin email"
+msgstr "Email del adminitrador"
+
+msgid "System email"
+msgstr "Email del sistema"
+
+msgid "Google map key"
+msgstr "Clave de Google maps"
+
+# Upload photo to [event name]
+msgid "Upload photo to %s"
+msgstr "Sube una foto a %s"
+
+msgid "Photos"
+msgstr "Fotos"
+
+msgid "Users"
+msgstr "Usuarios"
+
+msgid "User"
+msgstr "Usuario"
+
+msgid "Forgot your password?"
+msgstr "¿has olvidado tu clave?"
+
+msgid "Password recovery"
+msgstr "Recuperar clave"
+
+msgid "An email should be sent to your email address. For user privacy, we cannot confirm if it exists."
+msgstr "Un email se debería haber enviado a tu dirección. Por motivos de privacidad no podemos confirmar si la misma existe."
+
+msgid "Sorry, this email does not belong to any user"
+msgstr "Lo siento, este email no pertenece a ningún usuario"
+
+msgid "Sorry, the login code is not valid"
+msgstr "Lo siento, el código de entrada no es válido"
+
+msgid "You are now logged in, you can"
+msgstr "Has iniciado sesión, ahora puedes"
+
+msgid "Change user password"
+msgstr "Cambiar la clave de usuario"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "Invalid username or password."
+msgstr "Nombre de usuario o contraseña no válidos."
+
+# Translate as a regular text string
+# msgid's translation is msgstr[0]
+# msgid_plural is msgstr[1]
+msgid "Event"
+msgid_plural "Events"
+msgstr[0] "Evento"
+msgstr[1] "Eventos"
+
+msgid "Events"
+msgstr "Eventos"
+
+msgid "New password"
+msgstr "Nueva clave"
+
+msgid "New password confirmation"
+msgstr "Confirmación de la nueva clave"
+
+msgid "My Profile"
+msgstr "Mi perfil"
+
+msgid "Edit my profile"
+msgstr "Editar mi perfil"
+
+msgid "Start Date"
+msgstr "Fecha de Inicio"
+
+msgid "End Date"
+msgstr "Fecha de Fin"
+
+# *repeat* until [date]
+msgid "Until %s"
+msgstr "Hasta el %s"
+
+# to [time]
+msgid "To %s"
+msgstr "Hasta %s"
+
+msgid "Save"
+msgstr "Guardar"
+
+msgid "Delete this account"
+msgstr "Borrar esta cuenta"
+
+msgid "Password"
+msgstr "Clave"
+
+msgid "Username"
+msgstr "Nombre de usuario"
+
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+msgid "Login"
+msgstr "Entrar"
+
+msgid "Register"
+msgstr "Date de alta"
+
+msgid "Country"
+msgstr "País"
+
+msgid "City"
+msgstr "Ciudad"
+
+msgid "Cities"
+msgstr "Ciudades"
+
+msgid "Event Name"
+msgstr "Nombre del evento"
+
+msgid "Back"
+msgstr "Volver"
+
+msgid "comma separated"
+msgstr "separadas por una coma"
+
+msgid "Adding your own events is free and easy, try it!"
+msgstr "Añadir tus propios eventos es gratuito y fácil, ¡pruébalo!"
+
+msgid "This week"
+msgstr "Esta semana"
+
+msgid "This month"
+msgstr "Este mes"
+
+msgid "Events today"
+msgstr "Eventos hoy"
+
+msgid "Events this week"
+msgstr "Eventos esta semana"
+
+msgid "Events this month"
+msgstr "Eventos este mes"
+
+msgid "Submit"
+msgstr "Enviar"
+
+msgid "Manage comments"
+msgstr "Administrar comentarios"
+
+msgid "Manage events"
+msgstr "Administrar eventos"
+
+msgid "Manage users"
+msgstr "Administrar usuarios"
+
+msgid "Manage categories"
+msgstr "Administrar categorías"
+
+msgid "File type is not valid"
+msgstr "Tipo de archivo no válido"
+
+msgid "Edit event"
+msgstr "Editar evento"
+
+msgid "Close admin panel"
+msgstr "Cerrar panel de administración"
+
+# Posted by [username]
+msgid "Posted by %s"
+msgstr "Enviado por %s"
+
+# Posted by [username] in [event name]
+msgid "Posted by %1$s in %2$s"
+msgstr "Enviado por %1$s en %2$s"
+
+msgid "Comments"
+msgstr "Comentarios"
+
+msgid "Attendees"
+msgstr "Asistentes"
+
+msgid "Registration form"
+msgstr "Formulario de registro"
+
+msgid "Password confirmation"
+msgstr "Confirma la clave"
+
+msgid "There are no events."
+msgstr "No hay eventos."
+
+msgid "Add an event"
+msgstr "Añade un evento"
+
+msgid "About %s"
+msgstr "Acerca de %s"
+
+msgid "Terms and conditions"
+msgstr "Condiciones de uso"
+
+# Member since [date]
+msgid "Member since %s"
+msgstr "Miembro desde %s"
+
+msgid "My events"
+msgstr "Mis eventos"
+
+msgid "Visit my website"
+msgstr "Visita mi web"
+
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgid "Previous"
+msgstr "Anterior"
+
+msgid "Next"
+msgstr "Siguiente"
+
+# short for 'previous'
+msgid "prev"
+msgstr "ant"
+
+# short for 'next'
+msgid "next"
+msgstr "sig"
+
+msgid "Address"
+msgstr "Dirección"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "You are going to delete your account"
+msgstr "Estás a punto de borrar tu cuenta"
+
+msgid "You are going to delete your user account, all your data will be deleted."
+msgstr "Vas a borrar tu cuenta de usuario, toda tu información se borrará."
+
+msgid "Do you want to continue?"
+msgstr "¿Quieres continuar?"
+
+msgid "Yes, Delete My Account"
+msgstr "Si, borra mi cuenta"
+
+msgid "No, I Don't Want To delete My Account"
+msgstr "No, no quiero borrar mi cuenta"
+
+# Days Short
+msgid "Mon"
+msgstr "Lun"
+
+msgid "Tue"
+msgstr "Mar"
+
+msgid "Wed"
+msgstr "Mie"
+
+msgid "Thu"
+msgstr "Jue"
+
+msgid "Fri"
+msgstr "Vie"
+
+msgid "Sat"
+msgstr "Sab"
+
+msgid "Sun"
+msgstr "Dom"
+
+# Days long
+
+msgid "Monday"
+msgstr "Lunes"
+
+msgid "Tuesday"
+msgstr "Martes"
+
+msgid "Wednesday"
+msgstr "Miercoles"
+
+msgid "Thursday"
+msgstr "Jueves"
+
+msgid "Friday"
+msgstr "Viernes"
+
+msgid "Saturday"
+msgstr "Sábado"
+
+msgid "Sunday"
+msgstr "Domingo"
+
+# Months short
+
+msgid "Jan"
+msgstr "Ene"
+
+msgid "Feb"
+msgstr "Feb"
+
+msgid "Mar"
+msgstr "Mar"
+
+msgid "Apr"
+msgstr "Abr"
+
+msgid "May"
+msgstr "May"
+
+msgid "Jun"
+msgstr "Jun"
+
+msgid "Jul"
+msgstr "Jul"
+
+msgid "Aug"
+msgstr "Ago"
+
+msgid "Sep"
+msgid "Sep"
+
+msgid "Oct"
+msgstr "Oct"
+
+msgid "Nov"
+msgstr "Nov"
+
+msgid "Dec"
+msgstr "Dic"
+
+# Error messages
+msgid "You must select a country"
+msgstr "Debes seleccionar un país"
+
+msgid "Name must be at least 2 characters long"
+msgstr "El nombre debe tener al menos 2 carácteres"
+
+msgid "Please add some notes"
+msgstr "Introduce la descricpción"
+
+msgid "Please enter a valid web address"
+msgstr "Introduce una dirección web válida"
+
+msgid "Address must be at least 2 characters long"
+msgstr "La dirección debe tener al menos 2 carácters"
+
+msgid "Please write your desired username."
+msgstr "Por favor, escribe el nombre de usuario que deseas."
+
+msgid "This username is already in use."
+msgstr "Este nombre de usuario ya está ocupado."
+
+msgid "Username must have between 2 and 25 characters."
+msgstr "El nombre de usuario debe tener entre 2 y 25 caracteres."
+
+msgid "Only alphanumeric characters."
+msgstr "Solo caracteres alfanuméricos."
+
+msgid "Please write your desired password."
+msgstr "Por favor, escribe la clave que deseas."
+
+msgid "Password and password confirmation must be the same."
+msgstr "La clave y la confirmación de clave deben coincidir."
+
+msgid "Please enter a valid email address."
+msgstr "Por favor, introduce una dirección email válida."
+
+msgid "This email is already in use."
+msgstr "Esta dirección email ya está registrada."
+
+msgid "Error uploading file"
+msgstr "Error al subir el archivo"
+
+msgid "Please enter a valid end date"
+msgstr "Por favor, introduce una fecha válida"
+
+msgid "Comment must be at least 2 characters long"
+msgstr "El comentario debe tener un mínimo de dos caracteres"
+
+msgid "Pleas write your subject."
+msgstr "Por favor, escribe el asunto"
+
+msgid "Please write your message."
+msgstr "Por favor, escribe tu mensaje"

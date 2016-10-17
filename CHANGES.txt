@@ -1,0 +1,591 @@
+3.3 
+- Fix bug with https links in event urls
+- Update Cakephp to version 2.9.0
+
+3.2
+- Fix users export layout
+- Update CakePHP to version 2.8.2
+- Add twitter Summary Card in the events pages
+- Update documentation 
+- Add API documentation
+- Add read-only events API
+- Remove link in the calendar's current month label
+- Fix url in admin's category form
+- Add canonical link in events view pages
+- Add Facebook meta tags
+- Do not show promoted events with past end dates
+- Allow to promote events in categories
+- Fix bug which hide the 'published' checkbox in the events form
+
+3.1
+- update to CakePHP 2.8
+- add Facebook login
+- add user groups: administrators, event managers and guests
+- add Paypal integration
+- update documentation
+
+3.0.5
+- update to CakePHP 2.7.6
+- fix issue with htmltop and htmlbottom vars in the default layout
+
+3.0.4
+- update to CakePHP 2.6.3
+- fix layout when a header or footer is added throuth the admin panel
+- load maps external javascript resources using https instead of http
+
+3.0.3
+- add event dates to the rss feed
+- sort events by start date in the admin panel events index
+- fix do not reset end date when editing an event
+- change repeated events display style
+- fix repeated events display order
+- improvements in the admin panel css media queries
+- display event dates in the admin panel's events index
+- fix issue with event start dates when English wasn't used as default language
+- add lat and lng to the venues validation array
+- fix html layout when there are attendees and no comments in event view
+- update Spanish language file
+- add event status to allow confirmed, tentative and cancelled events
+- search events using its end date
+- fix broken links in calendar when translating month names in the url
+
+3.0.2
+- show alert message when debug mode is enabled
+- check if sitemap request has xml extension
+- allow translation of url elements
+- fix bug deleting repeated events didn't delete all events
+- html and css improvements
+- update documentation
+- update CakePHP to 2.5.2
+- do not reset user form in admin panel after validation error
+- do not reset venue form in admin panel after validation error
+- fix show comment validation message in admin panel
+- do not use the browser's html form validation
+- fix bug that prevented users from deleting their profile picture
+- update Spanish language file
+
+3.0.1
+- fix countries names capitalization
+- fix bug deleting dependent models when deleting a user
+- fix bug which deleted all events when using bulk category delete
+- add themes support
+- use sethfischer/mundo-names Spanish country names translation
+- set scrollwheel to false in Google Maps
+- improve dates translations
+- do not show users full url in their profile website link
+- fix translation in the admin panel input placeholders
+- update Spanish translation files
+- use the CakePHP's official Spanish cakep.po file
+- remove Italian translation files
+- remove cities index page
+- update CakePHP to 2.4.9
+- css style updates and improvements
+- html improvements
+- fix bug in venues country when a city with the same name already exists
+- add custom 404 error page
+- fix show missing user photo in admins comments search
+- show the search form in admin panel even if there are no items
+- force month names to lower case in calendar links
+- make the logo square clickable when there's no logo in the events listings
+- use View Blocks in default layouts
+- improve microformats data in the events listings page
+- add microformats markup in events view page
+
+3.0.0
+- add viewport meta tag
+- update language files
+- update documentation
+- automatically set zoom in venues edit map
+- fix bug in events map when a default country or city is set
+- css improvements in admin panel
+- fix bug with end dates when editing an event
+- fix translation issue in index filter
+- don't show the event's URL in the event link
+- hide overflow in events descriptions and comments
+- fix issue with end date input in the edit events form
+- fix html in photos admin panel
+
+3.20130217
+- bulk category delete will also bulk delete associated events
+- show message before deleteing a category if it contains events
+- fix events merge bug
+- new admin panel design
+
+3.20130206
+- improved photos admin panel
+- update translation files
+- update CakePHP to 2.4.5
+- fix link in photos admin panel
+
+3.20131125
+- allow admin to search venues by address
+- fix misspelled variable name in the image behavior
+- fix bug in users upcoming and past events listings
+- do not show non-published events in users events lists
+
+3.20131027
+- remove app version from the app controller
+- automatically redirect user to edit profile after password recovery login
+- use CakeEmail instead of Email Component
+- remove bit.ly integration
+- update cakephp to version 2.4.2
+
+3.20130919
+- minor css fixes for firefox
+- do not show user events if attendees or events are disabled
+- set autocomplete off in input fields
+
+3.20130918
+- avoid browser field validation in user edit form
+
+3.20130915
+- fix event cover and images gallery urls when Evento is installed in a subfolder
+
+3.20130914
+- fix bug on password recovery
+
+3.20130828
+- when adding an event with end date set the end date default to be the same as the start date
+- fix translation in venues autocomplete
+- fix bug when adding repeat events through the admin panel
+- redirect to previous page after deleting / editing an event in the admin panel
+- fix bug comments not showing user image in admin panel
+- redirect to previous page after deleting / editing a comment in the admin panel
+- redirect to previous page after deleting / editing a users in the admin panel
+- redirect to previous page after deleting event photos in the admin panel
+- redirect to previous page after deleting / editing a venues in the admin panel
+- redirect to previous page after deleting / editing a tags in the admin panel
+- redirect to previous page after deleting / editing a city in the admin panel
+- replace categories column with search form in the search results view
+- fix ical calendar name
+- remove Akismet anti-spam
+- update Spanish and Italian language files
+- admin panel style improvements
+- new front-end design
+- remove friends feature
+- remove messages feature
+- redesigned web installer
+- only the user who added the event can upload photos to its gallery
+- move countries translations to its own file
+- list events in home page up until its end date
+- show events in calendar for all its duration period
+- fix bug in the calendar's 'tomorrow' link
+- fix bug in the admin panel comments search
+- post comments using ajax
+- remove flash messages
+- fix content type in attendees ajax response
+- remove users index page
+- remove tags index page
+- implement messages as a regular feature instead of a plug-in
+- move photos gallery to the event view page
+- post comments from the event view page
+
+2.20130617
+- improve performance in repeat events creation
+- fix bug which prevented the events edit form to display the country name
+- update CakePHP to the 2.3.6 version
+
+2.20130508
+- improve file permission checks in the web installer
+- improve performance for image resizing in repeat events
+- update to CakePHP 2.3.4
+- fix application settings validation
+- hide comments and photos menu options when the features are disabled
+
+2.20130411
+- fix date/time format for repeat events end date field
+- add css media queries for responsive design
+- update documentation
+- update CakePHP to 2.3.2
+
+2.20130305
+- fix HTML5 validation in events form
+
+2.20130301
+- update CakePHP to the 2.3 version
+- fix bug which created a new venue for each repeat event
+
+2.20130103
+- fix cities autocomplete showing all cities instead of country filtered cities
+- update CakePHP to 2.2.4 version
+- hide private messages button if messages are disabled
+- add categories filter to the cache
+- update bit.ly api to V3
+- send welcome email message to new registered users
+- send an email notification to the site's admin when there are new events awaiting moderation
+- fix logo url in email messages
+- fix a bug with messages variable and menus link
+- fix month translation in the index filter
+
+2.20121101
+- rename the session cookie to Evento instead of CAKEPHP
+- update the bookmarks helper so images are loaded when mod_rewrite is not being used
+- set a default timezone to avoid errors in some servers
+- update template HTML doctype to HTML5
+- update and extend the documentation
+- allow users to set the site language and store their preferences in cookies
+- improve venue validation when new events are created
+- make bulk options text clickable in admin panel
+- change default cache prefix to avoid conflicts with other applications
+- allow admin to disable private messages
+- allow admin to disable attendees in events pages
+- allow admin to disable photos in events pages
+- allow admin to disable comments in events pages
+- change the "I'm going" button text in event view pages to "I went" for past events
+- maintenance update for the css style file
+- generate meta description for the home page based on site slogan and page number
+
+2.20121010
+- update CakePHP to 2.2.3
+- fix bug which caused duplicated events with some monthly repeat events options
+- update translations for the messages plugin
+- change star color in the calendar for past events
+
+2.20120903
+- fix bug in event validation when only admin can add venues
+- fix bug which caused some events to be shown in past dates
+- fix bug which caused events to not load if the venues or city names used invalid characters
+- update CakePHP to 2.2.2
+
+2.20120806
+- fix bug with promoted events cache and venues
+- fix bug in cities cache
+- update CakePHP to version 2.2.1
+- change all the database join queries into CakePHP style queries
+
+2.20120803
+- add Recaptcha to the contact form
+- update and improve the documentation
+- fix bug in monthly repeat events where the second month event was always missing
+
+2.20120708
+- update CakePHP to 2.1.4
+- update events feeds to Atom 2.0
+- fix bug which didn't check the event start_date existed in the beforeValidate method
+- fix bug which was calling the wrong parent function in beforeValidate()
+- automatically select the first category in the events form
+- fix app name in the about page
+- fix website title in xml feed
+- remove unused qrcode element
+
+2.20120605
+- update documentation
+- fix sort private messages index by ascending date
+- fix error when replying to private messages
+- fix Text helper wasn't being loaded in some cases
+- allow admin to delete an event and all its repeated events
+- show repeat events in events views
+- fix bug in monthly repeat events which caused events to have wrong dates in certain cases
+- fix event search results where in some cases the wrong date was shown
+- better page titles in events listings pages
+- allow admin to export attendees of an event in csv format
+- allow admin to see attendees in a specific event
+- allow admin to see photos filtered by event in admin panel
+- allow admin to see comments filtered by event in admin panel
+- fix content-type for ical export file in events view
+- fix return correct content-type on admin users export option
+- allow admin to delete user's profile photo
+- allow admin to edit user comments
+- fix bug in admin comment search not showing event name
+- add recaptcha to the private messaging system
+- add empty robots.txt file to prevent the messages in the error logs
+- fix a bug which prevented the sitemap.xml to work
+
+2.20120522
+- update CakePHP to 2.1.2
+- remove buzz from the events social share options
+- show events start times in events listings
+- the month name in the calendar now links to the current's month events
+- list current user in the events attendees list
+- update the google maps key link in the admin panel
+- if a day is selected in the calendar set a different background color for that cell
+- fix a bug in the cities list when limited to just one country
+- fix a bug were weekly repeat events could enter an infinite loop
+- fix a bug undefined variable errors in monthly repeat events
+
+2.20120418
+- fix small event logos where not being deleted when using the delete event form checkbox
+- try to get memory_limit from server instead of hardcode php's default in the ImageBehavior
+- fix countries in the index side bar were sorted before applying the translation
+- sort categories by name in the index sidebar
+- fix bug when admin event moderation was enabled edited events were automatically unpublished
+- fix bug user profile photos were not being renamed and could cause errors with long file names
+- update documentation
+- add meta tag to force IE7 compatibility mode
+- update Spanish and Italian language files
+- fix bug introduced in the last update which prevented month names to be properly translated
+- port javascript to jQuery
+- move all javascript to an external file
+- update Google Maps to use API v3
+- fix bug mod_rewrite error message was not fully displayed during installation
+- add site statistics in admin panel
+- allow admin to delete cities
+- allow admin to delete venues
+- add repeat event options in events form
+- fix bug with end date in events form
+- add recaptcha feature for user registration, comments and events submission
+
+2.20120210
+- fix bug in google calendar link when the event description was too long
+- update framework to CakePHP version 2.0.6
+
+2.20111206
+- fix city merge bug
+
+2.20111124
+- fix a bug which prevented to get a short url from bit.ly when adding an event in the admin panel
+- remove duplicated error message in venues form
+- fix bug the map in edit venue form wasn't working
+- make the autocomplete list appear faster and limit results to 10
+- fix bug in some cases the autocomplete list was being hidden below the map
+- fix bug that prevented user uploaded photos to be deleted when using the bulk delete option
+- add a checkbox to enable / disable events end date in event form
+- update cakephp to version 1.3.13
+- cache categories list in events form
+- cache countries list in events form
+- show year in event date view if event year is not the current year.
+- display always same message in password recovery page to avoid attackers to gather users email information
+- fix security bug that allowed users to perform xss attacks in the search view
+- fix bug that prevented social buttons to work if the event name had non latin characters
+- do not escape <br/> tags in admin panel comments page
+
+2.20110814
+- update Spanish and Italian translation locale files
+
+2.20110812
+- fix bug event photos where not deleted after event was deleted
+
+2.20110728
+- check if PCRE has been compiled with unicode support during installation
+- show url rewrite warning if .htaccess file is missing or mod_rewrite not available during installation
+- update cakephp framework to version 1.3.11
+- design modifications in the event view page
+- do not show cities block if admin has set a default city for events
+- add sql index in the start_date field to improve performance when there are many events in the database
+- fix bug that caused events in a future year to not be displayed in the index page
+- admin can set the week to start on saturday
+
+2.20110623
+- fix bug in tag autocomplete that loaded the default layout instead of the ajax one
+- update spanish and italian translation files
+- fix bug to make xml feed link work when the script is installed in a folder
+
+2.20110615
+- fix bug deleted users where not being deleted from friends lists in some cases.
+- update cakephp framework to version 1.3.10
+- fix bug in admin panel user deactivation
+- update documentation and add how-to mini guide
+- updated Spanish and Italian translation files
+- new frontend design
+- paginate user events in user view
+- update twitter button link
+- new private messages system
+- add user search by email or username
+- fix country link in promoted events 
+- use ajax to add or remove attendees to the events
+- use ajax to add or remove friends to the friends list
+- add cache for categories
+- add cache for promoted events
+- events can now have a logo
+- users can change password and profile photo in the same profile form
+- new date format option in admin panel
+- add bulk options in events admin panel
+- add bulk options in users admin panel
+- bug fix didn't automatically delete comments after the event was deleted
+- add bulk delete in tags admin panel
+- add tags search in admin panel
+- add bulk delete in categories panel
+- add category search in admin panel
+- add bulk delete in comments admin panel
+- add comment search in admin panel
+- add city search in admin panel
+- fix a missing html tag that was causing strange behavior of admin forms in firefox
+- fix bug that prevented the country names to be translated in the cities admin panel
+- fix bug that prevented the country names to be translated in admin user export link
+
+2.20110329
+- update cakephp framework to version 1.3.8
+- color fixes in the style.css file
+- fix bug in user edit form when user email needs to be confirmed
+- updated Italian and Spanish translations
+- update bit.ly shorturl after editing an event
+- autofocus first form element in events add form
+- fix bug in google maps live update when admin sets a default country
+- fix bug with app_settings in atom feed and add username and category to each feed entry
+- fix link in sitemap.xml generator
+- only admin can add venues option
+- add country name and venue name in events view url
+- refactor slug creation in event model
+- search venues in admin panel
+- add venues feature
+- fix misspelled variable in ical view
+- show categories and tags in promoted events
+- refactor autocomplete: tags autocomplete moved to tags controller, cities autocomplete moved to cities controller
+- admin can manage cities in admin panel
+- admin can merge events in admin panel
+- admin can merge categories in admin panel
+- change character '_' to '-' in category slugs
+- admin can merge tags in admin panel
+- admin can add events in admin panel
+- add event search in admin panel
+- new tags admin panel
+- new redesigned admin panel
+- add user search in admin panel
+- fix redirect bug after editing an event
+- fix bug in tag validation
+- fix bug in akismet behaviour as it was trying to connect to akismet.com even when it was disabled
+- display cities block in two columns
+- display tags in tags block always in two columns
+- add index to the events table to improve performance in some queries
+- change country list sql query so it doesn't display countries with events on the top
+- show categories in the index sidebar using two columns
+- fix bug in search results where spam and non-published events were showed
+- fix 'forgot your password?' link
+
+2.20110205
+- fix bug unpromoting events
+- fix bug unpublishing events
+- fix bug unmarking spam messages
+- fix bug removing user from attedees list
+- fix bug with google maps not showing after having errors on the event form
+- make marker in google maps draggable in edit form
+
+2.20110204
+- fix bug in javascript file that caused the map live update to fail
+- fix search form width in ie
+
+2.20110117
+- Fix bug with password recovery when user email confirmation was enabled
+- Fix security bug which allowed an attacker to login as a random user without having the password
+- remove password confirmation field from user registration form
+
+2.20110111
+- views are no longer bundled as a theme to simplify the directory structure
+- send email notifications in both html and text.
+- added html email templates for notifications
+- better layout for the select input in the search box
+- sort countries and cities by alphabetical order
+- add new option in admin settings to select time format 12 or 24
+
+2.20101126
+- Update map on events form if user uses the city autocomplete list.
+- Fix the label 'events this month' was being displayed even if calendar was not on current year
+- Fix bug wich made promoted events unpromoted when editing the event.
+- Set default database tables to use utf8 encoding
+
+2.20101123
+- Fix bug in user edit form wich was generating a wrong validation code for email
+- Fix bug wich was showing a wrong time in rss feed
+- Add a new set of default categories to the database
+- Events in calendar are now also filtered with current tag
+- Add a link to index sidebar to show the events starting tomorrow
+- Fix bug which allowed to have a tag repeated multiple times in the same event
+- Update users profile page giving more space to the user events
+- Add iso field in the countries table
+- Added an iestyle.css file for IE css only.
+- Update framework to CakePHP 1.3.6
+- Add Bit.ly QR Code to events view (it is not displayed by default)
+- In events add/edit form map is now automatically updated as the user types in the address
+- Get rid of the googlemaps helper and use a js file instead
+- Get rid of the event suggestion feature
+- Get rid of language redirect
+- Add Events search feature
+- Add a contact form
+
+2.20101107
+- Fix bug in ical export
+
+2.20101026
+- Fix links in event paginator
+- Fix: category was not being added to the event when using the ical view.
+- Improve events filter
+- Fix links in forms to make it work when Evento is installed in a directory
+- Feature: only admin can add new users
+
+2.20100929
+- Fix existing events were promoted by default
+- Fix only the current year's events were being displayed in the index
+- Fix cancel link in events form
+
+2.20100923
+- Fix bug street view button was not working if event address did not have lat and lng.
+- Fix countries in events add form where only sorted in english and not in translated versions
+- Do not use ucfirst on tag names
+- Fix translation strings
+- Allow admin to set timezone
+- Allow events in one country only or in one city only instead of worldwide events.
+- Feature: allow admin to set promoted events which will appear always on top.
+- Add abuse report form for users
+- Add option to export users to CSV file
+- Allow admin to edit users and add new admins
+- Add events ical export 
+- Add option to allow admin to moderate user submited events before publishing.
+- Add option to publish or unpublish events
+- Add option to activate and deactivate user accounts
+- Fix bug which allowed users to access spam events
+- Add google calendar button
+- New option to make users confirm the provided email address on sign up.
+- Show users with custom photo in the index page, if less than 10 display users with/without custom photo.
+- Do not display past events unless specified in the calendar
+- Improved event index filter
+- Allow user to view events by country
+- Add event categories
+- Fix problem with language redirect
+- Add social buttons. Create a short url for each event with Bit.ly API to share in twitter.
+- Fix bug changed event's city when editing if there were cities with the same name in different countries  
+- Feature: 'only admin can submit events' option
+- css fixes
+
+2.20100504
+- Fixed: bug allowed a potential attacker to gain admin permissions
+- Admin can add html in the header and bottom of the layout (useful for banners, adsense, analytics tracking code...)
+- Update cakephp to version 1.2.7
+- Fix bug in image behavior giving errors when uploading png files
+- Fix bug which forced users to set country and city if they wanted to edit their profile settings
+- Allow admin to select the start day for weeks (monday or sunday)
+
+2.20100425
+- Displaying week events on sunday was displaying next week's events
+- Admin can set default's site language
+- Do not show tags which are not assigned to events in the tags list
+
+2.20100324
+- Fix paths to make it work in a directory
+- Anonymous comments and anonymous events features have been removed
+- Css and Html fixes
+- New 404Error file layout
+- Use javascript from http://ajax.googleapis.com instead of local files
+- Groups have been removed
+- Implemented one step installer plugin
+- Check if selected language exists, if it doesn't switch to english.
+
+2.20100105
+- CSS fixes for Opera and Firefox browsers
+- Fix bug empty images were created if an upload error occurred
+- Fix bug wrong redirect after deleting a photo.
+- Change google maps to use GLargeMapControl3D()
+- Fix bug photos without user now are shown as anonymous user photos
+- Fix autocomplete cities and tags in admin panel forms 
+- Update cakephp from 1.2.4.8284 to 1.2.5
+- Update google maps helper to fix street view size problems.
+- Fixed security bug delete user session when user is deleted.
+- Fixed security bug allowing regular users to acces admin control panel
+
+- Fixed bug showing spam events in calendar
+- Fixed bug showing spam events in rss feeds and xml sitemap
+- add spam filter to events and comments
+- fixed bug on user profile update
+- Application settings are now stored in the database
+- add photos to events
+- fixed bug uploading big images
+- added event suggestions to groups and users
+- added groups
+- fixed code injection bug
+- autohide map if address is not found
+- new date format in user events
+- display city and country of events in index
+- keep tag when changing city in events index
+- fix admin autocomplete
+- fix getCities: get only cities with events.
+- change flash to Session->setFlash() in user actions.
+- fixed bug in report event.

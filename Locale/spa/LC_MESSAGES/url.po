@@ -1,0 +1,72 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2;plural=n!=1;\n"
+"Project-Id-Version: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+# START TRANSLATING HERE
+
+msgid "all-countries"
+msgstr "cualquier-pais"
+
+msgid "all-cities"
+msgstr "cualquier-ciudad"
+
+msgid "all-venues"
+msgstr "cualquier-local"
+
+msgid "all-categories"
+msgstr "cualquier-categoria"
+
+msgid "all-tags"
+msgstr "cualquier-etiqueta"
+
+msgid "week"
+msgstr "semana"
+
+msgid "events"
+msgstr "eventos"
+
+msgid "january"
+msgstr "enero"
+
+msgid "february"
+msgstr "febrero"
+
+msgid "march"
+msgstr "marzo"
+
+msgid "april"
+msgstr "abril"
+
+msgid "may"
+msgstr "mayo"
+
+msgid "june'"
+msgstr "junio"
+
+msgid "july"
+msgstr "julio"
+
+msgid "august'"
+msgstr "agosto"
+
+msgid "september"
+msgstr "septiembre"
+
+msgid "october"
+msgstr "octubre"
+
+msgid "november"
+msgstr "noviembre"
+
+msgid "december"
+msgstr "diciembre"

@@ -1,0 +1,263 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Evento API documentation</title>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Evento API</h1>
+    <h2>GET /api/events</h2>
+    <h3>Parameters</h3>
+    <ul>
+      <li><strong>country</strong>
+        <p>(int) id of country - get events in this country.</p>
+      </li>
+      <li><strong>city</city>
+        <p>(int) id of city - get events in this city.</p>
+      </li>
+      <li><strong>venue</strong>
+        <p>(int) id of venue - get events in this venue.</p>
+      </li>
+      <li><strong>category</strong>
+        <p>(int) id of category - get events in this category.</p>
+      </li>
+      <li><strong>date</strong>
+        <p>(string) date in format YYYY-mm-dd - get events starting this date.</p>
+      </li>
+      <li><strong>limit</strong>
+        <p>(int) number of elements returned per page</p>
+      </li>
+      <li><strong>page</strong>
+        <p>(int) page number</p>
+      </li>
+    </ul>
+    <h3>API response</h3>
+    <code>
+<pre>
+{"events":[
+  {
+    "id":"1",
+    "name":"event name",
+    "start_date":"2016-05-18 19:05:00",
+    "end_date":"2016-05-18 19:05:00",
+    "description":"event description",
+    "image":"http:\/\/example.org\/.../image.jpg",
+    "url":"http:\/\/example.org\/...",
+    "category": {
+        "name":"Comedy",
+        "id":"10",
+        "url":"http:\/\/example.org\/..."
+      },
+    "venue": {
+        "name":"test",
+        "id":"1",
+        "latitude":"41.3932",
+        "longitude":"2.16396",
+        "url":"http:\/\/example.org\/..."
+    },
+    "city": {
+        "name":"Barcelona",
+        "id":"1",
+        "url":"http:\/\/example.org\/..."
+    },
+    "country": {
+      "name":"Spain",
+      "id":"206",
+      "url":"http:\/\/example.org\/..."
+    }
+  },
+  {...}
+],
+"pagination": {"current_page":1,"total_pages":25,"limit":10}
+}
+</pre>
+    </code>
+
+    <h2>GET /api/events/{id}</h2>
+    <h3>Parameters</h3>
+    <p><i>none</i></p>
+    <h3>API response</h3>
+    <code>
+<pre>
+  {
+    "id":"1",
+    "name":"Event name",
+    "start_date":"2016-05-18 19:05:00",
+    "end_date":"2016-05-18 19:05:00",
+    "description":"Event description",
+    "image":"http:\/\/example.org\/...",
+    "url":"http:\/\/example.org\/...",
+    "category": {
+      "name":"Comedy",
+      "id":"10",
+      "url":"http:\/\/example.org\/..."
+    },
+    "venue": {
+      "name":"test",
+      "id":"1",
+      "latitude":"41.3932",
+      "longitude":"2.16396",
+      "url":"http:\/\/example.org\/..."
+    },
+    "city": {
+      "name":"Barcelona",
+      "id":"1",
+      "url":"http:\/\/example.org\/..."
+    },
+    "country": {
+      "name":"Spain",
+      "id":"206",
+      "url":"http:\/\/example.org\/..."
+    }
+  }
+</pre>
+</code>
+
+
+    <h2>GET /api/categories</h2>
+    <h3>Parameters</h3>
+    <ul>
+      <li><strong>limit</strong>
+        <p>(int) number of elements returned per page</p>
+      </li>
+      <li><strong>page</strong>
+        <p>(int) page number</p>
+      </li>
+    </ul>
+    <h3>API response</h3>
+    <code>
+<pre>
+{"categories": [
+  {
+  "name":"Music",
+  "id":"1",
+  "url":"http:\/\/example.org\/..."
+},
+{
+  "name":"Performing\/Visual Arts",
+  "id":"2",
+  "url":"http:\/\/example.org\/..."
+},
+{...}
+],
+"pagination":{"current_page":1,"total_pages":2,"limit":10}
+}
+</pre>
+</code>
+
+<h2>GET /api/countries</h2>
+<h3>Parameters</h3>
+<ul>
+  <li><strong>limit</strong>
+    <p>(int) number of elements returned per page</p>
+  </li>
+  <li><strong>page</strong>
+    <p>(int) page number</p>
+  </li>
+</ul>
+<h3>API response</h3>
+<code>
+  <pre>
+{"countries": [
+{
+  "name":"Afghanistan",
+  "id":"1",
+  "url":"http:\/\/example.org\/..."
+},
+{
+  "name":"\u00c5land Islands",
+  "id":"2",
+  "url":"http:\/\/example.org\/..."
+},
+{...}
+],
+"pagination":{"current_page":1,"total_pages":25,"limit":10}
+}
+  </pre>
+</code>
+
+
+<h2>GET /api/cities</h2>
+<h3>Parameters</h3>
+<ul>
+  <li><strong>country</strong>
+    <p>(int) id of country - get cities in this country</p>
+  </li>
+  <li><strong>limit</strong>
+    <p>(int) number of elements returned per page</p>
+  </li>
+  <li><strong>page</strong>
+    <p>(int) page number</p>
+  </li>
+</ul>
+<h3>API response</h3>
+<code>
+<pre>
+{"cities": [
+{
+  "name":"Barcelona",
+  "id":"1",
+  "url":"http:\/\/example.org\/...",
+  "country": {
+    "name":"Spain",
+    "id":"206",
+    "url":"http:\/\/example.org\/..."
+  }
+},
+{...}
+],"pagination":{"current_page":1,"total_pages":105,"limit":10}
+}
+</pre>
+</code>
+
+
+<h2>GET /api/venues</h2>
+<h3>Parameters</h3>
+<ul>
+  <li><strong>city</strong>
+    <p>(int) id of city -  get venues in this city</p>
+  </li>
+  <li><strong>country</strong>
+    <p>(int) id of country - get venues in this country</p>
+  </li>
+  <li><strong>limit</strong>
+    <p>(int) number of elements returned per page</p>
+  </li>
+  <li><strong>page</strong>
+    <p>(int) page number</p>
+  </li>
+</ul>
+<h3>API response</h3>
+<code>
+<pre>
+  {"venues": [
+  {
+    "name":"Venue name",
+    "id":"1",
+    "latitude":"41.3932",
+    "longitude":"2.16396",
+    "url":"http:\/\/example.org\/...",
+    "city": {
+      "name":"Barcelona",
+      "id":"1",
+      "url":"http:\/\/example.org\/..."
+    },
+    "country": {
+      "name":"Spain",
+      "id":"206",
+      "url":"http:\/\/example.org\/..."
+    }
+  },
+  {...}
+  ],
+  "pagination":{"current_page":1,"total_pages":1,"limit":10}
+}
+</pre>
+</code>
+
+  </div>
+</body>

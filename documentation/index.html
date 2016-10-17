@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex">
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<title>Evento Manual</title>
+</head>
+<body>
+	<div class="wrapper">
+	<h2>Table of Contents</h2>
+	<ul class="table-of-contents">
+		<li><a href="#license">Evento license</a></li>
+		<li><a href="#requirements">Requirements</a></li>
+		<li><a href="#installation">Installation</a>
+			<ul>
+				<li><a href="#installation">Default installation</a></li>
+				<li><a href="#installation-manual">Manual installation</a></li>
+			</ul>
+		</li>
+		<li><a href="#update">Update</a></li>
+		<li><a href="#settings">Evento settings</a></li>
+		<li><a href="#user-groups">User groups</a></li>
+		<li><a href="#customization">Customize the script</a>
+			<ul>
+				<li><a href="#customize-css">CSS files</a></li>
+				<li><a href="#customize-javascript">JavaScript files</a></li>
+				<li><a href="#customize-html">HTML and templates</a></li>
+				<li><a href="#customize-email-templates">Email templates</a></li>
+				<li><a href="#themes">Themes</a></li>
+				<li><a href="#customize-php">PHP code</a></li>
+			</ul>
+		</li>
+		<li><a href="#api">Evento API</a></li>
+		<li><a href="#howto">How-to</a>
+			<ul>
+				<li><a href="#howto-add-items-to-menu">Add new items to the menu</a></li>
+				<li><a href="#howto-add-static-page">Create new static pages</a></li>
+				<li><a href="#howto-modify-main-layout">Modify the main layout</a></li>
+				<li><a href="#howto-add-analytics-code">Add analytics code</a></li>
+				<li><a href="#howto-use-javascript">Use custom javascript code</a></li>
+				<li><a href="#howto-change-date-format">Change the date format</a></li>
+				<li><a href="#howto-change-photo-size">Change the photos default size</a></li>
+				<li><a href="#howto-change-number-of-events">Change number of events in the homepage</a></li>
+				<li><a href="#howto-allow-users-change-language">Allow users to change the language</a></li>
+			</ul>
+		</li>
+		<li><a href="#translation">Translation</a></li>
+		<li><a href="#troubleshooting">Troubleshooting</a>
+			<ul>
+				<li><a href="#trouble-debug-mode">Debug mode</a></li>
+				<li><a href="#trouble-log-files">Log files</a></li>
+				<li><a href="#trouble-apache-htaccess">Apache .htaccess files</a></li>
+				<li><a href="#trouble-modrewrite">Apache mod_rewrite</a></li>
+				<li><a href="#nginx">Nginx url rewriting</a></li>
+				<li><a href="#trouble-file-permissions">File permissions</a></li>
+				<li><a href="#trouble-pdo">PDO</a></li>
+				<li><a href="#trouble-cookies">Cookies</a></li>
+				<li><a href="#smtp">Sending email via SMTP</a></li>
+			</ul>
+		</li>
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+
+	<a name="license"></a>
+	<h2>License</h2>
+	<p>Evento uses the MIT License: <a href="https://opensource.org/licenses/MIT">https://opensource.org/licenses/MIT</a></p>
+	<a name="requirements"></a>
+	<h2>Requirements</h2>
+	<ul>
+		<li>Apache server on Linux with mod_rewrite.</li>
+		<li>PHP 5.3.0 or greater.</li>
+		<li>GD library and PDO with the MySQL driver.</li>
+		<li>PCRE with Unicode support.</li>
+		<li>MySQL 5.1 or greater.</li>
+	</ul>
+	<p>Optionally you may also require:</p>
+	<ul>
+		<li>API keys for the <a href="http://www.google.com/recaptcha">Recaptcha anti-bot service</a></li>
+		<li>Google Maps API key</li>
+		<li>Facebook <a href="https://developers.facebook.com">App ID and secret</a></li>
+		<li>Paypal <a href="https://developer.paypal.com">API credentials</a></li>
+	</ul>
+	<p>* Evento runs on top of the <a href="http://cakephp.org">CakePHP framework</a> which is included in the download package for your own convenience. You can take advantage of all its settings and options.</p>
+
+	<a name="installation"></a>
+	<h2>Installation</h2>
+	<ul>
+		<li><b>STEP 1.</b> Set up the database.
+			<p>Create a database in your server and set one user and password to use it.</p></li>
+		<li><b>STEP 2.</b> Upload Evento.
+			<p>Now you can upload the contents of the Evento folder to your web server's document root. Make sure you upload the .htaccess file as some operating systems may hide it from your file browser or FTP client. You can also install it in a folder or a subdomain.</p></li>
+		<li><b>STEP 3.</b> Evento settings.
+			<p>Open your browser and visit the url where you just uploaded the files and follow the instructions. You will be asked to write your database settings here.</p></li>
+		<li><b>STEP 4.</b> User registration and Evento settings.
+			<p>Register the first user and edit the site's settings in the admin control panel.</p></li>
+	</ul>
+	<a name="installation-manual"></a>
+	<h3>Manual installation</h3>
+	<p>The Evento installer will get you up and running in no time, but you can also install the script without using it.</p>
+	<p>Once you create the database in your server you can create the schema using the app/Config/Schema/install.sql file.</p>
+	<p>The database settings are stored in the app/Config/database.php file, and you can create it yourself instead of relaying on the install system. To do so just rename the database.php.defult file to database.php in the app/Config/ folder and edit it to set your database name, username and password.</p>
+	<code>
+		public $default = array(<br>
+			&nbsp;&nbsp;'datasource' => 'Database/Mysql',<br>
+			&nbsp;&nbsp;'persistent' => false,<br>
+			&nbsp;&nbsp;'host' => 'localhost',<br>
+			&nbsp;&nbsp;'login' => 'user',<br>
+			&nbsp;&nbsp;'password' => 'password',<br>
+			&nbsp;&nbsp;'database' => 'database_name',<br>
+			&nbsp;&nbsp;'prefix' => '',<br>
+			&nbsp;&nbsp;'encoding' => 'utf8',<br>
+		);
+	</code>
+	<p>Once the database file has been written you can safely remove the write permissions in the app/Config folder and all its files as the script no longer needs to write there.</p>
+
+	<h3>Optional installation steps</h3>
+	<p>The script will salt and encrypt your users passwords  to improve security. You can change the random salt string in the app/Config/core.php file, just take care not to overwrite this file if you update or reinstall the script.</p>
+	<p>In the same file you can also change the Security level which will define the session time out for your users. Related information can be found in the code comments included in the app/Config/core.php file itself.</p>
+	<p>In case you can modify your server settings you may want to set your DocumentRoot to app/webroot/ instead, this will keep most of the PHP code out of reach from the internet.</p>
+	<p>The script needs write permissions in the app/tmp/ folder and all its subfolders as well as in app/webroot/img/users, app/webroot/img/events/ and app/webroot/img/logos/ where it stores the user and events uploaded photos. Write permissions in the app/Config folder is only required if you are using the script's installer and they aren't needed anymore once the script's been installed.</p>
+
+	<p> * You should be able to install Evento following the CakePHP installation steps and setting the right folder permissions.</p>
+	<a name="update"></a>
+	<h2>Update Evento</h2>
+	<p>
+		The Evento update process may be different depending on the version you are using and the version you are updating to, but in general terms these are the steps you will need to follow.
+	</p>
+	<ul>
+	<li><b>STEP 1.</b> Backup.
+	<p>Before attempting to update your site you must make a backup of all your files and database just in case something goes wrong.</p></li>
+	<li><b>STEP 2.</b> Update the database scheme.
+	<p>In case new tables or new fields have been added to the database you will find an SQL file to update your database in app/Config/Schema/update.sql. This is usually done through your web hosting panel control tools, phpMyAdmin, or even with the mysql command line tool if you have shell access to your server.</p></li>
+	<li><b>STEP 3.</b> Upload the new version.
+	<p>Upload the new Evento version to your server, take care to not overwrite the app/Config/database.php file, or any other file you manually modified, and make sure the images in the app/webroot/img/ folders are not deleted.</p>
+	<p>In case the new version is using a newer CakePHP version you may need to upload the full script, otherwise you can just upload the app/ folder which will save time and bandwidth.</p></li>
+	<li><b>STEP 4.</b> Clear the cache.
+	<p>Delete the files in the app/tmp/cache/ folder and its subfolders. Do not delete the folders, just the files.</p></li></ul>
+
+	<a name="settings"></a>
+	<h2>Evento Settings</h2>
+	<p>After registering the first user you'll have admin permissions and will be redirected to the Evento settings page in the admin panel, you can come back to the settings page anytime you need if you want to change something later on, however, there are some settings you will want to configure before start using Evento.</p>
+	<ul>
+		<li><b>Application name.</b>
+			<p>The name you want for your website.</p></li>
+		<li><b>Application slogan.</b>
+			<p>The slogan will be used in the page description and page titles.</p></li>
+		<li><b>Admin email.</b>
+			<p>This is the administration email address. The messages sent through the contact form will be sent here.</p></li>
+		<li><b>System email.</b>
+			<p>The email address the script will use to send email messages, suchs as the password recovery notifications.</p></li>
+		<li><b>Google Maps key.</b>
+			<p>You need to set your Google Maps key to show the maps in the events pages enabling the <i>Google Maps JavaScript API</i> in the <a href="https://console.developers.google.com/apis/">Google's developer console</a>.</p></li>
+		<li><b>Time zone.</b>
+			<p>You can specify a time zone in case your server is a different country.</p></li>
+		<li><b>Time format.</b>
+			<p>Set the time to be in 12h or 24h format.</p></li>
+		<li><b>Date format.</b>
+			<p>Choose your preferred date format, default is dd/mm/yyyy.</p></li>
+		<li><b>Week starts.</b>
+			<p>let's you choose to start the week on Sunday or Monday.</p></li>
+		<li><b>Allow events for this country and city only.</b>
+			<p>Enables you to set the default country and city for your events.</p></li>
+		<li><b>Allow listings for this country and city only.</b>
+			<p>Makes your site accept events for this country and city only.</p></li>
+		<li><b>Language.</b>
+			<p>Default language is English, but you can change it in this list.</p>
+		<li><b>Guests can add events</b>
+			<p>Regular registered users can add events. Otherwise, only event managers and admins can add events. See the next section for more information about user groups.</p></li>
+		<li><b>Only admin can add new venues.</b>
+			<p>Only admin users can add venues. When a user wants to add a new event a list of existing venues will be shown so they can choose one.</p></li>
+		<li><b>Admin moderates events before publishing.</b>
+			<p>Events won't be automatically published until an admin reviews them.</p></li>
+		<li><b>Users must confirm the email address.</b>
+			<p>If enabled the users will receive a confirmation email to validate their email address before they can log in to the site.</p></li>
+		<li><b>Only admin can register new users.</b>
+			<p>The users registration form is disabled in the site and only admin can add new users through the admin panel.</p></li>
+		<li><b>Disable events comments.</b>
+			<p>When enabled the comments system will be disabled for all events so users won't be able to post comments on event pages.</p></li>
+		<li><b>Disable events photos.</b>
+			<p>Disable it if you don't want your users to be able to upload photos to the events pages, it will disable the events photo gallery system.</p></li>
+		<li><b>Disable event attendees.</b>
+			<p>If disabled the events attendees feature will be disabled and users won't be able to register themselves as attendees to any event.</p></li>
+			<li><b>Recaptcha API key.</b>
+				<p>When you enter a valid Recaptcha api key Rikisimo will automatically show a Recaptcha box in sensible forms.</p></li>
+			<li><b>Facebook App ID and Secret.</b>
+				<p>Add your Facebook app id and secret to allow users to login using Facebook.</p>
+			</li>
+			<li><b>Paypal API settings.</b>
+				<p>Add your paypal API keys to charge users for publishing their events. You can set the currency and the price.</p></li>
+		<li><b>Page header and footer.</b>
+			<p>This options allow you to insert HTML in the page header and footer. You can use it to add your banners or ads and your analytics page tracking system.</p></li>
+			</ul>
+
+	<a name="user-groups"></a>
+	<h2>User groups</h2>
+	<p>Since Evento 3.1 diferent user groups exist.</p>
+	<ul>
+		<li><b>Administrators.</b>
+			<p>Have full access to the site and admin panel. Can add, edit and delete events, users, comments and so on.</p>
+		</li>
+		<li><b>Event managers.</b>
+			<p>Event managers can't access the admin panel, but they are always allowed to add new events.</p>
+		</li>
+		<li><b>Guests.</b>
+			<p>All registered users default to this group. By default Guest users can add new events too, being in fact as if they were event managers. However, this behaviour can be changed in the admin panel so they are not allowed to add events, though they will still be able to add comments.</p>
+		</li>
+	</ul>
+	<p>* By default all registered users will be in the Guests group. To change a user group you must edit it in the admin panel and change its group.</p>
+	<p>* The first registered user is considered to be the administrator and it's automatically added to the administrators group.</p>
+	<a name="customization"></a>
+	<h2>Customization</h2>
+	<p>Evento includes all source files which allows you to fully customize the look and feel of the website as well as the functionalities.</p>
+
+	<a name="customize-css"></a>
+	<h3>CSS files</h3>
+	<p>CSS files are located in the app/webroot/css/ folder. There are different CSS files, each one with different purposes.</p>
+	<p>The main CSS file is style.css which is used to provide all the styles in the user interface. In case the client browser is Internet Explorer the iestyle.css file is added to the mix so you can add here specific rules for it.</p>
+	<p>The admin panel has its own style file, admin.css contains all rules used in the admin panel.</p>
+	<p>
+		The style and admin css files include media queries for responsive design, if you don't want to use responsive design, or want to modify it, you can do so by removing or editing the media queries that are at the end of the style files.</p>
+	<a name="customize-javascript"></a>
+	<h3>Javascript files</h3>
+	<p>Evento script uses the jQuery library, it is not included with the script though as it is loaded from the Google Distribution Network.</p>
+	<p>There is one specific Javascript file included with the script, it contains functions to load the Google Maps panel, handle the events form, and do some ajax for the photos galleries and event attendees list. However, you can include your own javascript code there too. The file is located at app/webroot/js/evento.js.</p>
+
+	<a name="customize-html"></a>
+	<h3>HTML views and templates</h3>
+	<p>The folders you see in app/View/ contain all the HTML templates and you can edit them as you need. Each folder represents a set of features so the Users/ folder contain the view templates for the user views and the Events/ folder contains the views for the events.</p>
+
+	<p>The main layouts are in the Layouts/ folder, there you will find the default.ctp file which contains the default template for views and the admin_default.ctp which contains the default template for the admin panel. You can edit this files if you want to modify common elements like headers or footers.</p>
+	<p>The default homepage template is an events view which loads the listings, it is located at app/View/Events/index.ctp.</p>
+	<p>The About and Terms and conditions pages are in the app/View/Pages/ folder and you can edit them like regular HTML files.</p>
+	<p>All template files use the CakePHP template extension <i>.ctp</i> but they are plain text files which can be opened with any text editor.</p>
+	<a name="customize-email-templates"></a>
+	<h3>Email templates</h3>
+	<p>Evento will send emails to the users to validate their email address. You can also edit this email templates in the app/View/Emails/ folder. There are templates for text only messages and HTML messages, you will need to edit them both.</p>
+	<a name="themes"></a>
+	<h3>Themes</h3>
+	<p>The themes feature was added in the 3.0.1 version. Evento takes advantage of the CakePHP theme system to allow the creation of themes.</p>
+	<p>Theme files need to be in the <i>app/Views/Themed/</i> folder and following the same file and folder structure as <i>folder is exactly the same as /app/View</i>.</p>
+	 <p>If a file is not found in your theme the default one will be used instead. This allows you to easily overwrite certain pages without the need to change the default views, making it easier to update the script.</p>
+	 <p>For more information about the themes you can check the <a href="http://book.cakephp.org/2.0/en/views/themes.html">CakePHP documentation</a>.</p>
+	<a name="customize-php"></a>
+	<h3>PHP code</h3>
+	<p>Evento is build using the CakePHP framework, so the Evento code is in the app/.</p>
+	<p>You can use the CakePHP tutorials and plugins to extend the application, just make sure to be using the same CakePHP version before following their instructions. The Evento CakePHP version can be checked in the administration panel.</p>
+	<p>The framework features a nice MVC design pattern and all the application code is organized accordingly. The models, that's the code used to save and retrieve data from the database, are in the app/Model folder. There you'll find a file for each model, in that files you can edit things like field validation, data associations, and before saving or after saving operations.</p>
+	<p>The controllers are used to manage the logic part of the application and are located in the app/Controller folder. Each controller has methods that in CakePHP terminology are referred as actions and are used to set the variabes you want display the views.</p>
+	<h2>CakePHP plugins</h2>
+	<p>Some features such as the installation are bundled as CakePHP plugins to make the code reusable.</p>
+	<p>The related controllers, models and view files for this features is in the app/Plugins/ folder.</p>
+
+	<a name="api"></a>
+	<h2>Evento API</h2>
+	<p>Evento features a read-only json/jsonp API which allows easy integration with third party sites.</p>
+	<p>For more information about the API endpoints, parameters and resposne format check out the <a href="api.html" target="_blank">Evento API documentation</a>.</p>
+	<p>The API is enabled by default. To disable it, set the <i>$apiIsEnabled</i> variable to <i>false</i> in the <i>app/Plugin/Api/Controller/ApiAppController.php</i> file.</p>
+	<a name="howto"></a>
+	<h2>How To</h2>
+	<p>The following are tips you can use to modify Evento and make it suit your needs.</p>
+	<a name="howto-add-items-to-menu"></a>
+	<h3>Add items to the navigation menu</h3>
+	<p>To add new items to the navigation menu you can edit the app/View/Elements/menu.ctp file. There you will see the code used to create all the links.</p>
+	<p>If you want to add a new link you can do it using the CakePHP HTML helper or use plain HTML.</p>
+	<code>
+		echo $this->Html->link('Blog', 'http://blog.example.com');
+	</code>
+	<p>In case you want to add a new item in the admin menu the file you need to edit is app/View/Elements/admin_menu.ctp.</p>
+
+	<a name="howto-add-static-page"></a>
+	<h3>Add a new static page</h3>
+	<p>Static pages are useful if you need to provide to your users some kind of information that won't change very often. The About and Terms And Conditions pages are an example.</p>
+	<p>To create a new static page just create a file in the app/View/Pages folder with the .ctp extension. You can use html code as you would in any plain html file, however you don't need to add headers or footers as the page will be integrated in the main layout.</p>
+	<p>You can link to that page using the /pages/name-of-your-file path. This example will link to the file in app/View/Pages/advertisement.ctp</p>
+	<code>
+		echo $this->Html->link('Advertisement',
+			array('controller'=>'pages', 'action'=>'display', 'advertisement'));
+	</code>
+	<p>You could also create the link in plain HTML instead of using the CakePHP HTML helper.</p>
+	<code>
+		&lt;a href="http://example.com/pages/advertisement"&gt;<br>Advertisement<br>&lt;/a&gt;
+	</code>
+
+	<a name="howto-modify-main-layout"></a>
+	<h3>Modify the main layout footer</h3>
+	<p>In case you want to add something in the footer of all Evento pages you could use the appropriate section in the admin panel to do it, but anything you add there will be displayed below the actual footer, so let's see how to modify the main layout to display a link besides the Terms And Conditions link.</p>
+	<p>You will need to modify the main layout file which is app/View/Layout/default.ctp, there you will find the code for the footer at the bottom of the file with the links to the static pages, so you can add your own links there too.</p>
+	<p>It is possible to use plain HTML or make use of the html helper to create the links.</p>
+
+	<a name="howto-add-analytics-code"></a>
+	<h3>Add analytics or advertisement codes to the layout</h3>
+	<p>You can use the header and footer fields in the admin panel to include your analytics or advertisement codes in the header or footer of your layout. Both fields accept Html and JavaScript code.</p>
+	<p>In case you want to insert it in a different place you can edit the layout which is in app/View/Layout/default.ctp or modify the individual view files in the app/View/ subfolders if you want to be even more specific on where you want the code loaded.</p>
+
+	<a name="howto-use-javascript"></a>
+	<h3>Use your own Javascript</h3>
+	<p>Evento loads the jQuery library from the Google Libraries API and you can use them in all the script's views.</p>
+	<p>If you want to use your own javascript files you can create them in the app/webroot/js folder. In case you want your js files to be available in all the pages you can link your files in the main layout app/View/Layout/default.ctp, otherwise if you want it to be available only in a specific page you can include it in the specific view file using the javascript helper.</p>
+	<code>
+			echo $this->Html->script('evento.js', false);
+	</code>
+
+	<a name="howto-change-date-format"></a>
+	<h3>Change default date format</h3>
+	<p>You can pick one of two date formats in the admin panel, the default date format is dd/mm/yyyy but you can set it to mm/dd/yyyy too. In case you need to use a different date format you can add your own in the app/View/Settings/admin_index.ctp file. Just add your date format in the options key of the date format select.</p>
+	<code>
+		echo $this->Form->input('dateFormat', array(<br>
+		&nbsp;&nbsp;'type'=>'select',<br>
+			&nbsp;&nbsp;'options'=>array(<br>
+				&nbsp;&nbsp;'d/m/Y'=>'dd/mm/yyyy', // default date format<br>
+				&nbsp;&nbsp;'m/d/Y'=>'mm/dd/yyyy', // alternative date format<br>
+				&nbsp;&nbsp;'j/n/y'=>'d/m/yy' // custom date format<br>
+			), 'label'=>__('Date format')));
+	</code>
+	<p>This example would add an additional date format like d/m/yy.</p>
+
+	<a name="howto-change-photo-size"></a>
+	<h3>Change default photo size</h3>
+	<p>You can change the default size for user uploaded photos, to do so you must modify the photos model in the app/Model/photo.php file.</p>
+	<p>In the $actsAs behaviour array you can change the image behaviour settings to use your desired image sizes:</p>
+	<code>
+		'photos' => array(<br>
+			&nbsp;&nbsp;'big' => array(<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;'destination' => 'events',<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;'size' => 300,<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;'type' => 'resize'),<br>
+			&nbsp;&nbsp;'small' => array(<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;'destination' => 'events/small',<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;'size' => array('width' => 50, 'height' => 50)<br>));
+	</code>
+	<p>This example would use an image size of 300x300 pixels for the user uploaded photos and 50x50 for the thumbnails.</p>
+	<p>You can modify the image behavior settings in the users model to change the default user profile photo size and in the events model to change the default logo size for events.</p>
+
+	<a name="howto-change-number-of-events"></a>
+	<h3>Change the number of events loaded in the main page</h3>
+	<p>In case you want to change the number of events loaded in the main page you can do so changing the limit parameter in the events controller pagination settings.</p>
+	<p>You must edit the app/Controller/EventsController.php file and change the limit option in the pagination array to the number of events you want to load in the main page. Default is 15.</p>
+	<code>
+		var $paginate = array(<br>
+		&nbsp;&nbsp;'limit' => 5,<br>
+		&nbsp;&nbsp;'order' => array(<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;'Event.start_date' => 'ASC',<br>
+		&nbsp;&nbsp;&nbsp;&nbsp;'Event.created'=>'DESC')<br>);
+	</code>
+	<p>This example would load only 5 events per page.</p>
+
+	<a name="howto-allow-users-change-language"></a>
+	<h3>Allow users to set their language preferences</h3>
+	<p>Some sites want their users to be able to set the language for the user interface, Evento allows to do this by storing the users language preferences in cookies so the next time they visit the site it shows up in their desired language.</p>
+	<p>
+		To allow your users to change the default language you can create special language links in any Evento page or menu. They should link to the <i>/lang</i> page including the language code.
+	</p>
+	<code>
+		// Set language to Spanish <br>
+		http://example.com/lang/spa
+	</code>
+	<p>Or you can also create the links using the CakePHP HTML helper.</p>
+	<code>
+		// Set the language to Italian<br>
+		echo $this->Html->link('Italiano', array('controller'=>'settings', 'action'=>'lang', 'ita'), array('rel'=>'nofollow'));
+	</code>
+	<p>The <i>/lang</i> page will check if the language exists before setting it and then will redirect the user to the page he was on.</p>
+	<a name="translation"></a>
+	<h2>Translate</h2>
+	<p>All translations are located in the app/Locale/ folder. The default language in Evento is English but a full Spanish translation is also included.</p>
+	<p>To translate Evento into a new language you can just copy app/Locale/spa and rename it according to your language iso639-2 code to use it as a template.</p>
+	<code>
+	Spanish		-> spa<br>
+	French		-> fre<br>
+	German		-> deu<br>
+	Italian		-> ita<br>
+	Portuguese	-> por
+	</code>
+	<p>You can get it a list of language codes at <a href="http://www.loc.gov/standards/iso639-2/php/English_list.php">http://www.loc.gov/standards/iso639-2/php/English_list.php</a>.</p>
+	<p>Then translate the all the <i>.po</i> files into your language. This files can be edited with a regular text editor.</p>
+	<code>
+	msgid "Previous"<br>
+	msgstr "Anterior"<br><br>
+	msgid "Next"<br>
+	msgstr "Siguiente"
+	</code>
+	<p>* Translate the msgstr string only and keep the msgid in English.</p>
+	<p>If you edit a translation file to add new strings or change the existing ones you will not see the changes in your website until the cache files are removed.</p>
+	<p>To remove the cache delete all the files in the app/tmp/cache/ folder and its subfolders.</p>
+	<p><b>Tip</b>: The English <i>.po</i> files are empty as the English language is the default and the text strings are embedded into the HTML views. However, you can use this files to create <i>fake</i> English translations to replace text strings so you don't have to modify the views.</p>
+	<code>
+		# replace the 'Users' text strings with 'Customers'<br>
+		msgid "Users"<br>
+		msgstr "Customers"<br>
+	</code>
+	<a name="troubleshooting"></a>
+	<h2>Troubleshooting</h2>
+	<p>This are some tips to help you debug and track down problems during the installation, update or customization of the script.</p>
+
+	<a name="trouble-debug-mode"></a>
+	<h3>Debug mode</h3>
+	<p>By default the script will not show any error message to the users, it will show a blank page instead. If that happens or if you are modifying the script and want to see all the error messages you will need to set the script in debug mode.</p>
+	<p>To do so you have to edit the app/Config/core.php and look for the debug option. It is set to 0 by default, you can set it to 1 to see all error messages or 2 to see error messages and SQL queries. Just remember to set it back to 0 when you are done.</p>
+	<code>
+	Configure::write('debug', 2);
+	</code>
+
+	<a name="trouble-log-files"></a>
+	<h3>Log files</h3>
+	<p>There are also a couple of log files that can help you track down issues with the script. The log files are located in the app/tmp/logs/ folder. There you will be able to see all log messages made by the script.</p>
+
+	<a name="trouble-apache-htaccess"></a>
+	<h3>Apache .htaccess files</h3>
+	<p>The .htaccess files are used to set up certain parameters for the server. In the case of Evento this files are used to set mod_rewrite up.</p>
+	<p>This files are usually hidden in your operating system or ftp client, use the option to see hidden files in your software if it has one.</p>
+	<p>There are three .htaccess files included in Evento. One in the root folder, one in the app/ folder and the last one in the app/webroot/ folder. Make sure you upload all three .htaccess files as they are easily forgotten or even ignored by some FTP clients.</p>
+	<p>/.htaccess</p>
+	<code>
+		&lt;IfModule mod_rewrite.c&gt;<br>
+		   RewriteEngine on<br>
+		   RewriteRule    ^$ app/webroot/    [L]<br>
+		   RewriteRule    (.*) app/webroot/$1 [L]<br>
+		&lt;/IfModule&gt;
+	</code>
+	<p>/app/.htaccess</p>
+	<code>
+		&lt;IfModule mod_rewrite.c&gt;<br>
+		    RewriteEngine on<br>
+		    RewriteRule    ^$    webroot/    [L]<br>
+		    RewriteRule    (.*) webroot/$1    [L]<br>
+		 &lt;/IfModule&gt;
+	</code>
+	<p>/app/webroot/.htaccess</p>
+	<code>
+		&lt;IfModule mod_rewrite.c&gt;<br>
+		    RewriteEngine On<br>
+		    RewriteCond %{REQUEST_FILENAME} !-d<br>
+		    RewriteCond %{REQUEST_FILENAME} !-f<br>
+		    RewriteRule ^(.*)$ index.php?/$1 [QSA,L]<br>
+		&lt;/IfModule&gt;<br>
+	</code>
+
+	<a name="trouble-modrewrite"></a>
+	<h3>Mod_rewrite</h3>
+	<p>Evento uses mod_rewrite to customize the script URLs and make them pretty, if you're unsure if your server has support for it here's an easy way the find out.</p>
+
+	<ul>
+		<li>Rename all Evento .htaccess files to htaccess.txt, there are three of them.</li>
+		<li>Create a new .htaccess in the root folder with this directives only:
+	<code>
+		Options +FollowSymLinks<br>
+		Redirect /google.html http://www.google.com
+	</code></li>
+		<li>With your browser try opening the google.html page in your server:
+	http://yourserver.com/google.html</li>
+	</ul>
+	<p>If you are redirected to google then mod_rewrite is enabled, if you
+	get an error it isn't and you should check again with your hosting
+	customer support service. When you are done rename the original
+	htaccess.txt files to .htaccess.</p>
+	<p>Some hosting companies will allow you to enable/disable mod_rewrite in the admin panel or using specific directives in the .htaccess file. Contact your hosting's customer support if unsure.</p>
+	<p>In some cases mod_rewrite will be enabled but the script will refuse to install because it's unable to locate the files and will show a mod_rewrite error message. This can usually be fixed using the RewriteBase directive with the full path to your script installation. You'll need to add it to all three .htaccess files.</p>
+	<code>
+		RewriteBase /full/path/to/script
+	</code>
+	<p>You may also need to add some rules specific to your hosting service and not Evento related, for your convenience these are some of the most common options.</p>
+	<code>
+		Options -MultiViews<br>
+		AddType x-mapp-php5 .php
+	</code>
+	<p>However, hosting companies may handle mod_rewrite in different ways, if you're unsure on how to proceed talk to your hosting's customer support and follow their indications.</p>
+
+	<p><b>Tip:</b> Even though mod_rewrite is a requirement, you can make Evento work without it using some of the options provided by the CakePHP framework.</p>
+	<p>To make Evento work without mod_rewrite you should manually install the script, as the default installation system won't detect mod_rewrite and won't allow you to continue. Then uncomment the  <i>App.baseUrl</i> setting in the app/Config/core.php file.</p>
+
+	<code>
+		Configure::write('App.baseUrl', env('SCRIPT_NAME'));
+	</code>
+
+	<a name="nginx"></a>
+	<h3>Nginx settings</h3>
+	<p>If you're using nginx instead of apache you may need to add this to your server rules.</p>
+	<code>
+    location / {<br>
+      &nbsp;&nbsp;try_files $uri $uri/ /index.php?$args;<br>
+      }<br>
+      <br>
+      location ~ \.php$ {<br>
+          &nbsp;&nbsp;try_files $uri =404;<br>
+          &nbsp;&nbsp;include /etc/nginx/fastcgi_params;<br>
+          &nbsp;&nbsp;fastcgi_pass    127.0.0.1:9000;<br>
+          &nbsp;&nbsp;fastcgi_index   index.php;<br>
+          &nbsp;&nbsp;fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;<br>
+      }
+	</code>
+	<p>Check the <a href="http://book.cakephp.org/2.0/en/installation/url-rewriting.html">CakePHP url rewriting documentation</a> if you need more information.</p>
+	<a name="trouble-file-permissions"></a>
+	<h3>File permissions</h3>
+	<p>Evento needs write permissions in the following folders:</p>
+	<ul>
+		<li>app/Config/</li>
+		<li>app/tmp/ (and all its subfolders)</li>
+		<li>app/webroot/img/logos/ (and all its subfolders)</li>
+		<li>app/webroot/img/events/ (and all its subfolders)</li>
+		<li>app/webroot/img/users/ (and all its subfolders)</li>
+	</ul>
+	<p>Not having the proper permissions in this folders could cause the script to refuse to install or upload photos.</p>
+
+	<a name="trouble-pdo"></a>
+	<h3>PDO</h3>
+	<p>The PHP Data Objects (PDO) extension is an interface for accessing databases in PHP and is enabled by default as of PHP 5.1.0. However, some hosting companies may decide to disable it or not install de MySQL driver required by Evento.</p>
+	<p>If you are not sure if it is enabled check your server's phpinfo page or contact your hosting's customer support.</p>
+
+	<a name="trouble-cookies"></a>
+	<h3>Cookies</h3>
+	<p>Evento uses cookies to keep track of users, if you're unable to login to your Evento site you should make sure cookies are enabled in your browser and there isn't any anti-virus or firewall blocking them.</p>
+
+	<a name="smtp"></a>
+	<h3>Sending email via SMTP</h3>
+	<p>By default Evento will send emails using the PHP's mail() function. Some hosting companies disable this function and force their userts to use an external SMTP server instead.</p>
+	<p>To configure Evento to use your SMTP server instead of the mail() function you will need to rename the app/Config/email.php.default to app/Config/email.php and set your SMTP settings in the $default connection. Use the $smtp section as a template or check see the <a href="http://book.cakephp.org/2.0/en/core-utility-libraries/email.html">CakePHP's email documentation</a> if you need more information.
+</div>
+</body>
+</html>
