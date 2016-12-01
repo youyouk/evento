@@ -154,35 +154,35 @@ msgstr "événements de %"
 
 # [category] events in [country]
 msgid "%1$s events in %2$s"
-msgstr "eventos de %1$s en %2$s"
+msgstr "événements %1$s %2$s"
 
 # [category] events in [country] on [month] [day]
 msgid "%1$s events in %2$s on %3$s %4$s"
-msgstr "eventos de %1$s en %2$s el %4$s de %3$s"
+msgstr "événements %1$s %2$s sur %3$s %4$s"
 
 # events in [country] on [date]
 msgid "events in %1$s on %2$s %3$s"
-msgstr "eventos en %1$s el %3$s de %2$s"
+msgstr "événements de %1$s %2$s %3$s"
 
 # events on [month] [day]
 msgid "events on %1$s %2$s"
-msgstr "eventos el %2$s de %1$s"
+msgstr "Événements de %1$s à %2$s"
 
 # [category] events on [month] [day]
 msgid "%1$s events on %2$s %3$s"
-msgstr "eventos de %1$s el %3$s de %2$s"
+msgstr "événements %1$s %2$s %3$s"
 
 # Events tagged [tag name]
 msgid "Events tagged %s"
-msgstr "Eventos con la etiqueta %s"
+msgstr "Événements avec le mot-clef %s"
 
 # Events at [venue name]
 msgid "Events at %s"
-msgstr "Eventos en %s"
+msgstr "Evénements à %s"
 
 # Events on [month] [day] [year]
 msgid "Events on %1$s %2$s %3$s"
-msgstr "Eventos el %2$s de %1$s del %3$s"
+msgstr "Eventos el %2$s de %1$s sur %3$s"
 
 # [day], [month] [day number], [time].
 msgid "%1$s, %2$s %3$s, %4$s."
@@ -194,633 +194,633 @@ msgstr "%1$s %3$s de %2$s."
 
 # [day], [month] [day number] of [year], [time].
 msgid "%1$s, %2$s %3$s of %4$s, %5$s."
-msgstr "%1$s %3$s de %2$s del %4$s, %5$s."
+msgstr "%1$s %3$s de %2$s sur %4$s, %5$s."
 
 # [day], [month] [day number] of [year].
 msgid "%1$s, %2$s %3$s of %4$s."
-msgstr "%1$s %3$s de %2$s del %4$s."
+msgstr "%1$s %3$s de %2$s sur %4$s."
 
 # At [venue name]
 msgid "At %s"
 msgstr "En %s"
 
 msgid "View attendees"
-msgstr "Ver asistentes"
+msgstr "Voir les participants"
 
 msgid "Related data"
-msgstr "Datos relacionados"
+msgstr "Données associées"
 
 msgid "View comments"
-msgstr "Ver comentarios"
+msgstr "Voir les commentaires"
 
 msgid "View photos"
-msgstr "Ver fotos"
+msgstr "Voir les photos"
 
 msgid "Back to event"
-msgstr "Volver al evento"
+msgstr "Retour à l'évènement"
 
 msgid "There are no attendees."
-msgstr "No hay asistentes."
+msgstr "Il n'y a pas de participant."
 
 msgid "Repeat"
-msgstr "Repetir"
+msgstr "Répéter"
 
 msgid "Does not repeat"
-msgstr "No repetir"
+msgstr "Ne pas répéter"
 
 msgid "Daily"
-msgstr "Cada día"
+msgstr "Chaque jour"
 
 msgid "Weekly"
-msgstr "Cada semana"
+msgstr "Hebdomadaire"
 
 msgid "Monthly"
-msgstr "Cada mes"
+msgstr "Mensuel"
 
 msgid "Repeats every"
-msgstr "Repetir cada"
+msgstr "Répéter chaque"
 
 msgid "Day(s)"
-msgstr "Día(s)"
+msgstr "Jour(s)"
 
 msgid "Week(s)"
-msgstr "Semana(s)"
+msgstr "Semaine(s)"
 
 msgid "Month(s)"
-msgstr "Mes(eses)"
+msgstr "Mois"
 
 msgid "Same day"
-msgstr "El mismo día"
+msgstr "Même jour"
 
 msgid "Specific day"
-msgstr "Un día en concreto"
+msgstr "Le jour ou le jour avant/après un jour spécifique du mois"
 
 msgid "First"
-msgstr "Primer"
+msgstr "Premier"
 
 msgid "Last"
-msgstr "Último"
+msgstr "Dernier"
 
 # repeats on *date* (repeat options)
 msgid "Repeats on"
-msgstr "Repetir los"
+msgstr "Répétitions sur"
 
 msgid "Weekdays only"
-msgstr "Solo días entre semana"
+msgstr "Jours de la semaine"
 
 msgid "Repeat until"
-msgstr "Repetir hasta"
+msgstr "Répétez jusqu'à"
 
 msgid "End after"
-msgstr "Acabar después de"
+msgstr "Arrêt après"
 
 msgid "occurrences"
-msgstr "repeticiones"
+msgstr "Occurrences"
 
 msgid "Add end date"
-msgstr "Añadir fecha de fin"
+msgstr "Ajouter la date de fin"
 
 msgid "Public key"
-msgstr "Clave pública"
+msgstr "Clé publique"
 
 msgid "Private key"
-msgstr "Clave privada"
+msgstr "Clé privée"
 
 msgid "Please delete the venues in this city before proceeding."
-msgstr "Por favor borra los locales en esta ciudad antes de continuar."
+msgstr "S’il vous plaît supprimer les sites dans cette ville avant de poursuivre."
 
 msgid "Yes, delete the venue and all its events"
-msgstr "Sí, borrar este local y todos sus eventos"
+msgstr "Oui, supprimer le lieu de rendez-vous et tous ses événements"
 
 msgid "No, I don't want to delete this venue"
-msgstr "No, no quiero borrar este local"
+msgstr "Non, je ne veux pas supprimer ce lieu"
 
 msgid "There is one event in this venue, deleting it will also delete the event."
-msgstr "Hay un evento en este local, borrar el local también borrará el evento."
+msgstr "Il existe un événement dans ce lieu, supprimant il supprimera également l’événement."
 
 msgid "There are %d events in this venue, deleting it will also delete the events."
-msgstr "Hay %d eventos en este local, borrar el local también borrará los eventos."
+msgstr "Il y a %d événements dans ce lieu, supprimant il supprimera également les événements."
 
 msgid "If you don't want to delete any event you may need to edit this venue or merge it with an existing one."
-msgstr "Si no quieres borrar ningún evento deberás editar este local."
+msgstr "Si vous ne voulez pas supprimer n’importe quel événement, que vous devrez peut-être modifier ce lieu ou de fusionner avec un existant."
 
 msgid "Website"
-msgstr "Página web"
+msgstr "Site Internet"
 
 msgid "I'm going"
-msgstr "Voy a ir"
+msgstr "J'y vais."
 
 msgid "Upload a photo"
-msgstr "Subir una foto"
+msgstr "Charger une photo"
 
 msgid "I'm going to this event, click to cancel."
-msgstr "Voy a este evento, click para cancelar."
+msgstr "Je vais à cet événement, cliquez ici pour annuler."
 
 msgid "Edit user profile"
-msgstr "Editar perfil de usuario"
+msgstr "Modifier le profil de l’utilisateur"
 
 msgid "Profile photo"
-msgstr "Foto de perfil"
+msgstr "Photo de profil"
 
 msgid "delete photo"
-msgstr "borrar foto"
+msgstr "Supprimer cette photo"
 
 msgid "Event cover image"
-msgstr "Foto de portada del evento"
+msgstr "Image de la couverture de l’événement"
 
 msgid "Delete cover image"
-msgstr "Borrar la foto de portada"
+msgstr "Supprimer l'image"
 
 msgid "Date format"
-msgstr "Formato de fecha"
+msgstr "Format de la date"
 
 # Welcome to [app name]
 msgid "Welcome to %s"
-msgstr "Bienvenido a %s"
+msgstr "Bienvenue à %s"
 
 # You just signed up for a new account at [website url] with user name [username].
 msgid "You just signed up for a new account at %1$s with user name %2$s."
-msgstr "Acabas de darte de alta en %1$s con el nombre de usuario %2$s."
+msgstr "Vous venez de vous inscrire pour un nouveau compte sur %1$s avec le nom de l’utilisateur %2$s."
 
 msgid "There are no categories"
-msgstr "No hay categorías"
+msgstr "Il n’y pas encore de catégories"
 
 msgid "There are no comments"
-msgstr "No hay comentarios"
+msgstr "Il n’y a aucun commentaire"
 
 msgid "With selected:"
-msgstr "Con los seleccionados:"
+msgstr "Selectionné(e)"
 
 msgid "Basic settings"
-msgstr "Configuración básica"
+msgstr "Réglages de base"
 
 msgid "Time settings"
-msgstr "Configuración horaria"
+msgstr "Réglage de l'heure"
 
 msgid "Country & language"
-msgstr "País e Idioma"
+msgstr "Pays & langue"
 
 msgid "Admin settings"
-msgstr "Configuración de administrador"
+msgstr "Paramètres Admin"
 
 msgid "Google Maps key"
-msgstr "Clave de Google Maps"
+msgstr "Clé API de Google Maps"
 
 msgid "Header & footer"
-msgstr "Cabecera y pie de página"
+msgstr "En-tête & pied de page"
 
 msgid "Venues"
-msgstr "Locales"
+msgstr "Lieux"
 
 msgid "Venue"
-msgstr "Local"
+msgstr "Lieu"
 
 msgid "Tag"
-msgstr "Etiqueta"
+msgstr "Mot clé"
 
 msgid "Merge event"
-msgstr "Combinar evento"
+msgstr "Fusionner l’événement"
 
 msgid "Merge venue"
-msgstr "Combinar local"
+msgstr "Fusionner les lieu de rendez-vous"
 
 msgid "Merge categories"
-msgstr "Combinar las categorías"
+msgstr "Fusionner des catégories"
 
 msgid "This category already exists"
-msgstr "Esta categoría ya existe"
+msgstr "Cette catégorie existe déjà."
 
 msgid "This tag already exists"
-msgstr "Esta etiqueta ya existe"
+msgstr "Cette balise existe déjà"
 
 msgid "Merge tags"
-msgstr "Combinar etiquetas"
+msgstr "Fusionner les étiquettes"
 
 msgid "This city already exists"
-msgstr "Esta ciudad ya existe"
+msgstr "Cette ville existe déjà"
 
 msgid "Merge cities"
-msgstr "Combinar las ciudades"
+msgstr "Fusionner les villes"
 
 msgid "Change Venue"
-msgstr "Cambiar Local"
+msgstr "Changement de lieu"
 
 msgid "Venue Name"
-msgstr "Nombre del Local"
+msgstr "Nom du nouvel événement"
 
 msgid "Add a new venue"
-msgstr "Añadir un nuevo local"
+msgstr "Ajouter un nouveau site"
 
 msgid "Provide the address for a new venue."
-msgstr "Establecer la dirección para un nuevo local."
+msgstr "Indiquez l’adresse d’un nouveau lieu."
 
 msgid "Please select a venue."
-msgstr "Por favor selecciona un local."
+msgstr "Veuillez sélectionner un lieu de rendez-vous."
 
 msgid "Please select a category"
-msgstr "Por favor selecciona una categoría"
+msgstr "Sélectionnez une catégorie"
 
 msgid "merge"
-msgstr "combinar"
+msgstr "fusionner"
 
 msgid "Add a Venue"
-msgstr "Añadir un local"
+msgstr "Ajouter un lieu"
 
 msgid "Time format"
-msgstr "Formato de hora"
+msgstr "Format de l’heure des événements"
 
 msgid "Only admin can add new venues."
-msgstr "Solo el administrador puede añadir locales."
+msgstr "Seul l’administrateur peut ajouter de nouveaux sites."
 
 msgid "Only admin can register new users."
-msgstr "Solo el administrador puede añadir nuevos usuarios."
+msgstr "Seul l’administrateur peut s’inscrire de nouveaux utilisateurs."
 
 msgid "There are no tags"
-msgstr "No hay etiquetas"
+msgstr "Il n'y a pas de mot-clé."
 
 msgid "There are no cities"
-msgstr "No hay ciudades"
+msgstr "Villes"
 
 msgid "There are no users"
-msgstr "No hay usuarios"
+msgstr "Il n’y a pas d’utilisateur."
 
 msgid "Events tomorrow"
-msgstr "Eventos mañana"
+msgstr "Événements de demain"
 
 msgid "Tomorrow"
-msgstr "Mañana"
+msgstr "Demain"
 
 msgid "No events found"
-msgstr "No se han encontrado eventos"
+msgstr "Aucun évènement trouvé"
 
 msgid "Search"
-msgstr "Buscar"
+msgstr "Recherche"
 
 msgid "Add user"
-msgstr "Añadir usuario"
+msgstr "Ajouter un utilisateur"
 
 msgid "Export as CSV"
-msgstr "Exportar como CSV"
+msgstr "Export en CSV"
 
 msgid "Settings saved"
-msgstr "Configuración guardada"
+msgstr "Paramètres sauvegardés"
 
 msgid "If you need to change your user password login in this url:"
-msgstr "Si necesitas cambiar tu clave de usuario puedes hacerlo en esta url:"
+msgstr "Si vous devez modifier votre login mot de passe de l’utilisateur dans cette url :"
 
 msgid "If you don't need to change your password just ignore this email."
-msgstr "Si no necesitas cambiar tu clave puedes ignorar este email."
+msgstr "Si vous n’avez pas besoin de changer votre mot de passe simplement ignorer ce message."
 
 msgid "Contact us"
-msgstr "Contacta con nosotros"
+msgstr "Contactez-nous"
 
 msgid "User account is active"
-msgstr "La cuenta de usuario está activa"
+msgstr "Compte d’utilisateur est actif"
 
 msgid "User is admin"
-msgstr "El usuario es administrador"
+msgstr "L'utilisateur est administrateur"
 
 msgid "Time zone"
-msgstr "Zona horaria"
+msgstr "Heure locale :"
 
 msgid "Categories"
-msgstr "Categorías"
+msgstr "Categories"
 
 msgid "Category"
-msgstr "Categoría"
+msgstr "Catégorie"
 
 msgid "Add category"
-msgstr "Añadir categoría"
+msgstr "Ajouter une catégorie"
 
 # Events in category [category]
 msgid "Events in category %s"
-msgstr "Eventos en la categoría %s"
+msgstr "Événements de catégorie %s"
 
 msgid "Published"
-msgstr "Publicado"
+msgstr "Publié"
 
 msgid "publish"
-msgstr "publicar"
+msgstr "publié"
 
 msgid "unpublish"
-msgstr "no publicar"
+msgstr "Annuler la publication"
 
 msgid "Timezone"
-msgstr "Zona horaria"
+msgstr "Fuseau horaire"
 
 msgid "Allow events for this country only"
-msgstr "Permitir eventos sólo en este país"
+msgstr "Permettre des événements dans ce pays seulement"
 
 msgid "Allow events for this city only"
-msgstr "Permitir eventos sólo en esta ciudad"
+msgstr "Permettre les événements pour cette ville uniquement"
 
 # admin settings select the day to start the week
 msgid "Week starts"
-msgstr "La semana empieza en"
+msgstr "La semaine débute le"
 
 msgid "Admin moderates events before publishing."
-msgstr "El administrador modera los eventos antes de publicarlos."
+msgstr "Admin modérés des événements avant du publier."
 
 msgid "Users must confirm the email address."
-msgstr "Los usuarios deben confirmar su email."
+msgstr "Les utilisateurs doivent confirmer l’adresse e-mail."
 
 msgid "Bit.ly username"
-msgstr "Nombre de usuario de Bit.ly"
+msgstr "Bit.ly username"
 
 msgid "Bit.ly API key"
-msgstr "Clave API de Bit.ly"
+msgstr "Bit.ly API key"
 
 msgid "Active"
-msgstr "Activo"
+msgstr "Activé"
 
 msgid "deactivate"
-msgstr "desactivar"
+msgstr "Désactiver"
 
 msgid "activate"
-msgstr "activar"
+msgstr "activer"
 
 msgid "Guests can add events"
-msgstr "Todos los usuarios pueden añadir eventos"
+msgstr "Les clients peuvent ajouter des événements"
 
 msgid "Page header"
-msgstr "Cabecera de la página"
+msgstr "En-tête de page"
 
 msgid "Page bottom"
-msgstr "Pie de página"
+msgstr "Bas de la page"
 
 msgid "Language"
-msgstr "Idioma"
+msgstr "Langue"
 
 msgid "Manage photos"
-msgstr "Administrar fotos"
+msgstr "Gestion des photos"
 
 msgid "There are no photos"
-msgstr "No hay fotos"
+msgstr "Il n’y a pas encore de photos"
 
 msgid "Settings"
-msgstr "Configuración"
+msgstr "Paramètres"
 
 msgid "Events must be moderated and are not published immediately."
-msgstr "Los eventos deben ser moderados por un administrador y no se publican inmediatamente"
+msgstr "Les événements doivent être modérées et ne sont pas publiés immédiatement."
 
 msgid "This event is not published yet and has to be moderated by an admin"
-msgstr "Este evento no está publicado y debe ser moderado por un administrador"
+msgstr "Cet avis sera modéré par un administrateur avant d’être publié."
 
 msgid "delete"
-msgstr "borrar"
+msgstr "supprimer"
 
 msgid "Application slogan"
-msgstr "Eslogan de la web"
+msgstr "Slogan de l’application"
 
 msgid "Application name"
-msgstr "Nombre de la web"
+msgstr "Nom de l'application"
 
 msgid "Admin email"
-msgstr "Email del adminitrador"
+msgstr "Email de l'administrateur"
 
 msgid "System email"
-msgstr "Email del sistema"
+msgstr "Courriel de système"
 
 msgid "Google map key"
-msgstr "Clave de Google maps"
+msgstr "Google Map Api Key"
 
 # Upload photo to [event name]
 msgid "Upload photo to %s"
-msgstr "Sube una foto a %s"
+msgstr "Télécharger photo sur %s"
 
 msgid "Photos"
-msgstr "Fotos"
+msgstr "Photos"
 
 msgid "Users"
-msgstr "Usuarios"
+msgstr "Utilisateurs"
 
 msgid "User"
-msgstr "Usuario"
+msgstr "Utilisateur"
 
 msgid "Forgot your password?"
-msgstr "¿has olvidado tu clave?"
+msgstr "Mot de passe oublié ?"
 
 msgid "Password recovery"
-msgstr "Recuperar clave"
+msgstr "Consulter le mot de passe"
 
 msgid "An email should be sent to your email address. For user privacy, we cannot confirm if it exists."
-msgstr "Un email se debería haber enviado a tu dirección. Por motivos de privacidad no podemos confirmar si la misma existe."
+msgstr "Un e-mail a été envoyé à votre adresse e-mail, si elle est enregistrée avec nous, s'il vous plaît cliquer sur le lien fourni pour réinitialiser votre mot de passe."
 
 msgid "Sorry, this email does not belong to any user"
-msgstr "Lo siento, este email no pertenece a ningún usuario"
+msgstr "Cet email n'a été envoyé à aucun utilisateur."
 
 msgid "Sorry, the login code is not valid"
-msgstr "Lo siento, el código de entrada no es válido"
+msgstr "Désolé, le code d’ouverture n’est pas valide"
 
 msgid "You are now logged in, you can"
-msgstr "Has iniciado sesión, ahora puedes"
+msgstr "Vous êtes désormais connecté."
 
 msgid "Change user password"
-msgstr "Cambiar la clave de usuario"
+msgstr "Modifier le mot de passe de l'utilisateur"
 
 msgid "Edit"
-msgstr "Editar"
+msgstr "Modifier"
 
 msgid "Invalid username or password."
-msgstr "Nombre de usuario o contraseña no válidos."
+msgstr "Identifiant ou mot de passe incorrect"
 
 # Translate as a regular text string
 # msgid's translation is msgstr[0]
 # msgid_plural is msgstr[1]
 msgid "Event"
 msgid_plural "Events"
-msgstr[0] "Evento"
+msgstr[0] "Événement"
 msgstr[1] "Eventos"
 
 msgid "Events"
-msgstr "Eventos"
+msgstr "Événements"
 
 msgid "New password"
-msgstr "Nueva clave"
+msgstr "Nouveau mot de passe"
 
 msgid "New password confirmation"
-msgstr "Confirmación de la nueva clave"
+msgstr "Confirmation du nouveau mot de passe"
 
 msgid "My Profile"
-msgstr "Mi perfil"
+msgstr "Mon profil"
 
 msgid "Edit my profile"
-msgstr "Editar mi perfil"
+msgstr "Modifier mon profil"
 
 msgid "Start Date"
-msgstr "Fecha de Inicio"
+msgstr "Date de début"
 
 msgid "End Date"
-msgstr "Fecha de Fin"
+msgstr "Date de fin"
 
 # *repeat* until [date]
 msgid "Until %s"
-msgstr "Hasta el %s"
+msgstr "Du %s"
 
 # to [time]
 msgid "To %s"
-msgstr "Hasta %s"
+msgstr "à %s"
 
 msgid "Save"
-msgstr "Guardar"
+msgstr "Sauver"
 
 msgid "Delete this account"
-msgstr "Borrar esta cuenta"
+msgstr "Supprimer ce compte"
 
 msgid "Password"
-msgstr "Clave"
+msgstr "Mot de passe"
 
 msgid "Username"
-msgstr "Nombre de usuario"
+msgstr "Nom"
 
 msgid "Logout"
-msgstr "Cerrar sesión"
+msgstr "Se déconnecter"
 
 msgid "Login"
-msgstr "Entrar"
+msgstr "Connexion"
 
 msgid "Register"
-msgstr "Date de alta"
+msgstr "Registre"
 
 msgid "Country"
-msgstr "País"
+msgstr "Pays"
 
 msgid "City"
-msgstr "Ciudad"
+msgstr "Ville"
 
 msgid "Cities"
-msgstr "Ciudades"
+msgstr "Villes"
 
 msgid "Event Name"
-msgstr "Nombre del evento"
+msgstr "Nom de l’évènement"
 
 msgid "Back"
-msgstr "Volver"
+msgstr "Retour"
 
 msgid "comma separated"
-msgstr "separadas por una coma"
+msgstr "séparés par des virgules"
 
 msgid "Adding your own events is free and easy, try it!"
-msgstr "Añadir tus propios eventos es gratuito y fácil, ¡pruébalo!"
+msgstr "L’ajout de vos propres événements est simple et gratuit, essayez-le !"
 
 msgid "This week"
-msgstr "Esta semana"
+msgstr "Cette semaine"
 
 msgid "This month"
-msgstr "Este mes"
+msgstr "Ce mois"
 
 msgid "Events today"
-msgstr "Eventos hoy"
+msgstr "Événements aujourd'hui"
 
 msgid "Events this week"
-msgstr "Eventos esta semana"
+msgstr "Événements cette semaine"
 
 msgid "Events this month"
-msgstr "Eventos este mes"
+msgstr "Evènements ce mois-ci"
 
 msgid "Submit"
-msgstr "Enviar"
+msgstr "Enregistrer"
 
 msgid "Manage comments"
-msgstr "Administrar comentarios"
+msgstr "Gérer les commentaires"
 
 msgid "Manage events"
-msgstr "Administrar eventos"
+msgstr "Gérer les évènements"
 
 msgid "Manage users"
-msgstr "Administrar usuarios"
+msgstr "Gérer les utilisateurs"
 
 msgid "Manage categories"
-msgstr "Administrar categorías"
+msgstr "Gérer les catégories"
 
 msgid "File type is not valid"
-msgstr "Tipo de archivo no válido"
+msgstr "Le fichier n'est pas valide"
 
 msgid "Edit event"
-msgstr "Editar evento"
+msgstr "Modifier l’évènement"
 
 msgid "Close admin panel"
-msgstr "Cerrar panel de administración"
+msgstr "Fermer panneau d’administration"
 
 # Posted by [username]
 msgid "Posted by %s"
-msgstr "Enviado por %s"
+msgstr "Publié par %s"
 
 # Posted by [username] in [event name]
 msgid "Posted by %1$s in %2$s"
-msgstr "Enviado por %1$s en %2$s"
+msgstr "Publié par %1$s dans %2$s"
 
 msgid "Comments"
-msgstr "Comentarios"
+msgstr "Commentaires"
 
 msgid "Attendees"
-msgstr "Asistentes"
+msgstr "Participants"
 
 msgid "Registration form"
-msgstr "Formulario de registro"
+msgstr "Formulaire d'inscription"
 
 msgid "Password confirmation"
-msgstr "Confirma la clave"
+msgstr "Confirmation de votre mot de passe"
 
 msgid "There are no events."
-msgstr "No hay eventos."
+msgstr "Aucun événement"
 
 msgid "Add an event"
-msgstr "Añade un evento"
+msgstr "Ajouter un évènement"
 
 msgid "About %s"
-msgstr "Acerca de %s"
+msgstr "À propos de %s"
 
 msgid "Terms and conditions"
-msgstr "Condiciones de uso"
+msgstr "Termes et condition"
 
 # Member since [date]
 msgid "Member since %s"
-msgstr "Miembro desde %s"
+msgstr "Membre depuis %s"
 
 msgid "My events"
-msgstr "Mis eventos"
+msgstr "Mes évènements"
 
 msgid "Visit my website"
-msgstr "Visita mi web"
+msgstr "Voir mon site"
 
 msgid "Tags"
-msgstr "Etiquetas"
+msgstr "Mots-clefs"
 
 msgid "Previous"
-msgstr "Anterior"
+msgstr "Précédent"
 
 msgid "Next"
-msgstr "Siguiente"
+msgstr "Suivant"
 
 # short for 'previous'
 msgid "prev"
-msgstr "ant"
+msgstr "préc"
 
 # short for 'next'
 msgid "next"
-msgstr "sig"
+msgstr "suivant"
 
 msgid "Address"
-msgstr "Dirección"
+msgstr "Adresse"
 
 msgid "Description"
-msgstr "Descripción"
+msgstr "Description"
 
 msgid "You are going to delete your account"
-msgstr "Estás a punto de borrar tu cuenta"
+msgstr "Vous voulez supprimer votre compte"
 
 msgid "You are going to delete your user account, all your data will be deleted."
-msgstr "Vas a borrar tu cuenta de usuario, toda tu información se borrará."
+msgstr "Vous voulez supprimer votre compte d’utilisateur, toutes vos données seront supprimées."
 
 msgid "Do you want to continue?"
-msgstr "¿Quieres continuar?"
+msgstr "Voulez-vous continuer ?"
 
 msgid "Yes, Delete My Account"
-msgstr "Si, borra mi cuenta"
+msgstr "Oui, supprimer mon compte"
 
 msgid "No, I Don't Want To delete My Account"
-msgstr "No, no quiero borrar mi cuenta"
+msgstr "Non, je veux supprimer mon compte"
 
 # Days Short
 msgid "Mon"
